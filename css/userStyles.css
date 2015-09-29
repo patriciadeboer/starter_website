@@ -1,0 +1,168 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+header h1{
+	background-color:#FF6B6B;
+	Height: 70px;
+	margin-bottom:10px;
+	font: 50px "amaticbold", sans-serif;
+	color:#F7FFF7;
+	text-align:center;
+}
+
+body{
+	background-color:#E8E8E8;
+	margin: 10px ;
+}
+
+a{
+	Text-decoration:none;
+	color:#FF6B6B;
+}
+
+h2{
+	font: 40px "amaticbold", sans-serif;
+	color:#FF6B6B;
+}
+
+time{
+	font:14px "josefin_sansregular",sans-serif;
+	font-style: italic;
+}
+
+p{
+	font: 20px "josefin_sansregular", sans-serif;
+	color:#292F36;
+}
+/*nav
+{
+	width: 100%;
+	background-color: #6EF9F5;
+}*/
+
+nav > img{
+	height: 70px;
+}
+
+
+nav{
+   background-color:#00B0E0;
+}
+
+nav ul{
+	list-style: none;
+	text-align: center;
+	padding:0;
+	margin:0;
+  background-color:#00B0E0;
+}
+
+nav li{
+	font: 1.05em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 50px;
+	text-transform: uppercase;
+  border-bottom: 1px solid white;
+}
+
+nav a
+{
+	display: block;
+	text-decoration: none;
+	color: white; 
+  transition: .3s background-color;
+}
+
+nav ul li a:hover
+{
+  background-color: #fffeb3;
+	color: #FF7373;
+}
+
+nav ul li.active a
+{
+  background-color:white;
+  color: #FF7373;
+}
+
+@media screen and (min-width: 680px) {
+  nav li {
+    width: 130px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+
+  }
+    nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+}
+
+.logo
+{
+	display: inline-block;
+	height: 50px;
+/*	background-image: url("../images/author.JPG");
+	background-repeat: no-repeat;*/
+}
+
+/*a:hover{
+	color:#FFE66D;
+	text-decoration: underline;
+}
+nav a:hover
+{
+	color: #F7FFF7;
+}*/
+
+.blog-index article:nth-child(odd) h2{
+	background-color: #6EF9F5;
+}
+
+.blog-index article:nth-child(even) h2{
+	background-color: #FFe66d;
+}
+
+article p:after{
+	content:" Read more";
+	font-size:12px;
+
+}
+
+article img{
+	max-height: 250px;
+}
+
+figcaption {
+		font:14px "josefin_sansregular",sans-serif;
+		font-style: italic;
+		text-transform: uppercase;
+}
+
+section{
+	margin: 0 1.5%;
+	float:left;
+	width:67%;
+}
+
+aside{
+	float:right;
+	margin: 0 1.5%;
+	width:26%;
+}
+
+
+
+footer {
+  clear: both;
+}
+
+.listpicblog
+{
+    background-image: url('../images/Japan.jpeg');
+    background-repeat: no-repeat;
+    height: 100px;
+/*    background-position: 50% 10px;*/
+}
