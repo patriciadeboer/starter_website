@@ -12,7 +12,7 @@ header h1{
 }
 
 body{
-	background-color:#E8E8E8;
+/*	background-color:#E8E8E8;*/
 	margin: 10px ;
 }
 
@@ -142,9 +142,10 @@ figcaption {
 }
 
 section{
-	margin: 0 1.5%;
+	margin: 1.5px;
 	float:left;
 	width:67%;
+	background-color:#E8E8E8 ;
 }
 
 aside{
