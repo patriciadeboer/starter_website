@@ -1,14 +1,26 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+h1{
+	font: 50px "amaticbold", sans-serif;
+	text-align:center;
+}
+
 
 header h1{
 	background-color:#FF6B6B;
-	Height: 70px;
+	height: 70px;
 	margin-bottom:10px;
-	font: 50px "amaticbold", sans-serif;
 	color:#F7FFF7;
-	text-align:center;
+}
+
+aside h1{
+	color:white;
+	background-color: black;
+	font-size:40px;
+}
+section h1{
+	border-bottom: 1px black solid;
 }
 
 body{
@@ -85,20 +97,7 @@ nav ul li.active a
   color: #FF7373;
 }
 
-@media screen and (min-width: 680px) {
-  nav li {
-    width: 130px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
 
-  }
-    nav li {
-    display: inline-block;
-    margin-right: -4px;
-  }
-
-}
 
 .logo
 {
@@ -133,6 +132,7 @@ article p:after{
 
 article img{
 	max-height: 250px;
+	max-width:100%;
 }
 
 figcaption {
@@ -141,6 +141,35 @@ figcaption {
 		text-transform: uppercase;
 }
 
+
+
+
+
+footer {
+  clear: both;
+}
+
+.listpicblog
+{
+    background-image: url('../images/Japan.jpg');
+    background-repeat: no-repeat;
+    height: 250px;
+    max-width: 100%;
+/*    background-position: 50% 10px;*/
+}
+
+@media screen and (min-width: 680px) {
+  nav li {
+    width: 130px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+
+  }
+    nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
 section{
 	margin: 1.5px;
 	float:left;
@@ -154,19 +183,8 @@ aside{
 	width:26%;
 }
 
-
-
-footer {
-  clear: both;
 }
 
-.listpicblog
-{
-    background-image: url('../images/Japan.jpg');
-    background-repeat: no-repeat;
-    height: 100px;
-/*    background-position: 50% 10px;*/
-}
 
 .box{
 	height:175px;
