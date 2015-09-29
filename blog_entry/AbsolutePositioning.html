@@ -38,16 +38,30 @@
         </nav>
 
         <main>
-            <div class="box relative"> Relative 
-                <div class="box absolute"> Absolute </div> 
+            <div class="group">
+                <p> Relative box will always remain aligned to the left side of the page while absolute is 10px to the left. Absolute box will always begin under last line of text in relative box </p> 
+                <div class="box relative"> Relative 
+                    <div class="box absolute"> Absolute </div> 
+                </div>
+            </div>
+            <div class="group">
+                <p> See what happens when I add an extra line to relative box? Also notice how this text doesn't care that above absolute box overlaps me :(. Its position is absolute and doesn't contribute to height of parent therefore the div ends at the orange line.</p> 
+                <div class="box relative"> Relative again <br> next line
+                    <div class="box absolute"> Absolute repeat</div> 
+                </div>
+            </div>
+            <div class="group g2">
+                <p> Notice this text is 200px to the left of its section thanks to that annoying overlapping absolute repeat box (and having to add a margin left to this paragraph to compensate). This relative box is 15px from the line of text above it, and lastly, its absolute buddy has 25px margin between the end of relative box's text and its text line. These boxes have a horizontal margin of auto therefore it will always be centered in your page. Change the screen width and see for yourself... IT MOVES!  </p> 
+                <div class="box relative r2"> Relative 2 
+                    <div class="box absolute a2"> Absolute 2</div>
+                </div>
             </div>
 
-            <div class="box relative r2"> Relative 2 
-                <div class="box absolute a2"> Absolute 2</div>
-            </div>
-
-            <div class="box relative r3"> Relative 3 
-                <div class="box absolute a3"> Absolute 3 Borderbox</div>
+            <div class="group">
+                <div class="box relative r3"> Relative 3 
+                    <div class="box absolute a3"> Absolute 3 Borderbox</div>
+                </div>
+                <p> This box has a bottom positioning therefore it's position is based on it's distance from the top of this text. Also this Absolute is a borderbox and therefore it is smaller. The padding is included in the overall size and not in addition to the 175 px</p>
             </div>
         </main>
 

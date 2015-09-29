@@ -168,8 +168,8 @@ footer {
 }
 
 .box{
-	height:150px;
-	width:150px;
+	height:175px;
+	width:175px;
 }
 
 .relative{
@@ -185,7 +185,7 @@ footer {
 }
 
 .r2{
-	margin: 0 auto;
+	margin:auto;
 	left:15px;
 	top:15px;
 }
@@ -196,7 +196,7 @@ footer {
 
 .r3{
 	left:550px;
-	bottom:10px;
+	bottom:50px;
 }
 
 .a3{
@@ -206,3 +206,15 @@ footer {
   	border:1px blue solid;
 }
 
+.group{
+	border-top:2px white solid;
+	border-bottom: 2px orange solid;
+	width:100%;
+}
+
+.group p{
+	max-width:1200px;
+}
+.g2 p{
+	margin-left:200px;
+}
