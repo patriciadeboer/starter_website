@@ -2,8 +2,8 @@
    Author's custom scripts
    ========================================================================== */
 
- //var character_name= 'Roaring Panda';
- var character_name = prompt('What is character name');
+ var character_name= 'Roaring Panda';
+ // var character_name = prompt('What is character name');
 
 console.log('\nCharacter Name: ' + character_name+ '\n\n******************************\n')
 
