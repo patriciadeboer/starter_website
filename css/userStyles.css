@@ -19,6 +19,8 @@ aside h1{
 	background-color: black;
 	font-size:40px;
 }
+
+
 section h1{
 	border-bottom: 1px black solid;
 }
@@ -97,7 +99,10 @@ nav ul li.active a
   color: #FF7373;
 }
 
-
+aside li a{
+	text-align: center;
+	font: 30px "amaticbold", sans-serif;
+}
 
 .logo
 {
@@ -142,9 +147,31 @@ figcaption {
 }
 
 
+.circle{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	font-size:35px;
+	line-height: 100px;
+	text-align:center;
+	background: #000;
+}
+
+.circle h2{
+	line-height: 30px;
+	color:#fffeb3;
+}
+.relativeimg{
+	position:relative;
+	top:10px;
+}
 
 
-
+.absoluteimg.circle{
+	position:absolute;
+	bottom:15px;
+	left:200px;
+}
 footer {
   clear: both;
 }
