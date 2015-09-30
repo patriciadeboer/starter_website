@@ -381,11 +381,7 @@ img.backstory
 {
 	width: 98%;
 	background-position: center; 
-	-webkit-background-size: contain; /* Safari and Chrome */
-	-moz-background-size: contain; /* Firefox */
-	-ms-background-size: contain; /* Internet Explorer */
-	-o-background-size: contain; /* Opera */
-	background-size: contain; /* CSS3 */ 
+
 }
 p.backstory{
 	width:98%;}
@@ -414,7 +410,6 @@ p.backstory{
 
 .icon{
 	display:inline-block;
-	width:130px;
 }
 
 /*.skills{
