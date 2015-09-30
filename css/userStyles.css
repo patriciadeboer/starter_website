@@ -170,6 +170,7 @@ figcaption {
 		text-transform: uppercase;
 }
 
+
 /* Travel*/
 .travel h2{
 	margin:0px;
@@ -185,6 +186,23 @@ figcaption {
 
 .travel{
 	text-align: center;
+}
+
+.recipe-icon{
+	width:250px;
+	display:inline-block;
+	height:250px;
+	margin:5px;
+	text-align: center;
+}
+
+.recipes{
+	text-align: center;
+}
+
+.recipes h2{
+	margin:0px;
+	margin-bottom: 10px;
 }
 /**************** FOOTER ****************/
 footer {
@@ -324,12 +342,16 @@ figure{
 	color:#FF7373;
 	text-align: center;
 }
+
+.aboutme div{
+	text-align:center;
+}
 .aboutme h2{
 	font: 25px "segoe ui", sans-serif;
 	letter-spacing: .15em;
 	font-weight: bold;
 }
-.home
+.aboutme
 {
 	width: 100%;
 	color: #444;
@@ -343,13 +365,13 @@ figure{
 }
 
 
-.aboutme section:nth-child(odd){
+.aboutme section:nth-child(even){
   background: url(../images/greywood.jpg) ;
   border-bottom: #dddddd solid 1px;
   padding: .5em;
 }
 
-.aboutme section:nth-child(even){
+.aboutme section:nth-child(odd){
   background-color: #AFEEEE;
   border-bottom: #dddddd solid 1px;
   padding: .01em 1em 1em;
