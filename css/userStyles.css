@@ -365,23 +365,21 @@ figure{
 }
 
 
-.aboutme section:nth-child(even){
+.aboutme section:nth-child(odd){
   background: url(../images/greywood.jpg) ;
   border-bottom: #dddddd solid 1px;
   padding: .5em;
 }
 
-.aboutme section:nth-child(odd){
+.aboutme section:nth-child(even){
   background-color: #AFEEEE;
   border-bottom: #dddddd solid 1px;
   padding: .01em 1em 1em;
 }
 /* BACKSTORY ------*/
-.backstory
+img.backstory
 {
-	width: 80%;
-	min-width:709;
-	min-height: 375px;
+	width: 98%;
 	background-position: center; 
 	-webkit-background-size: contain; /* Safari and Chrome */
 	-moz-background-size: contain; /* Firefox */
@@ -389,6 +387,42 @@ figure{
 	-o-background-size: contain; /* Opera */
 	background-size: contain; /* CSS3 */ 
 }
+p.backstory{
+	width:98%;}
+
+@media screen and (min-width: 680px) {
+	img.backstory
+	{
+		width: 70%;
+		display:inline-block;
+		vertical-align: top
+		background-position: center; 
+		-webkit-background-size: contain; /* Safari and Chrome */
+		-moz-background-size: contain; /* Firefox */
+		-ms-background-size: contain; /* Internet Explorer */
+		-o-background-size: contain; /* Opera */
+		background-size: contain; /* CSS3 */ 
+	}
+
+	p.backstory{
+		width:20%;
+		display:inline-block;
+		vertical-align: top;
+	}
+}
+
+.aboutme img{
+	width:130px;
+}
+
+.icon{
+	display:inline-block;
+}
+
+/*.skills{
+	text-align: center;
+}*/
+
 /* ----CHECKLIST----*/
 ul.check_list
 {
@@ -403,4 +437,5 @@ ul.check_list
 {
 	padding-left: 40px;
 	background: transparent url("../images/Heart_Checkbox_25px.png") scroll 0 8px no-repeat;
+	list-style: none;
 }
