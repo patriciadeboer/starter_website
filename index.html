@@ -1,119 +1,134 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>My Cool Site</title>
-        <meta name="description" content="A website showcasing the work of a student in the Starter League Fall 2015 class!">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Patricia de Boer's Site</title>
+    <meta name="description" content="A website showcasing the work of a student in the Starter League Fall 2015 class!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/html5boilerplate.css">
-        <link rel="stylesheet" href="css/userStyles.css">
-        <link href="fonts/webfontkit-20150908-133113/stylesheet.css" rel="stylesheet" type="text/css">
-        <link href="fonts/webfontkit-20150916-090002/stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/html5boilerplate.css">
+    <link rel="stylesheet" href="css/userStyles.css">
+    <link href="fonts/webfontkit-20150908-133113/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="fonts/webfontkit-20150916-090002/stylesheet.css" rel="stylesheet" type="text/css">
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-<header>
-    <h1>Life as we know it blog </h1>
-    <time>
-</header>
-        <nav class="container">
-<!--             <img class="pic_author" src="images/author.JPG" alt="a picture of the author" /> -->
-            <div class="logo"><img class="pic_author" src="images/author.JPG" alt="a picture of the author" /> </div>
-            <ul class="navigation-links">
-                <li class="active first"><a href="index.html">Home</a></li>
-                <li>
-                    <a href="/about"> About Me </a>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <nav class="container">
+        <ul class="navigation-links">
+            <li class="active first"><a href="index.html">Home</a></li>
+            <li>
+                <a href="/about"> About Me </a>
+            </li>
+            <li>
+              <a href="index.html#posts"> Posts </a>
+            </li>
+            <li><a href="index.html#travel">Travel</a></li>
+            <li><a href="/recipes">Recipes</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Life as we know it blog </h1>
+    </header>
+
+    <main>
+        <div class="leftside">
+        <section class="blog-index">
+            <h1 id="posts"> Recent Blog Posts </h1>
+            <article class="blog-entry">
+                <h2><a href="blog_entry/AbsolutePositioning.html"> What I've learned about absolute positioning </a></h2>
+                <time datetime="2015-09-09">Sept 9 '15</time>
+                <figure>
+                    <img src="images/absolute_positions.png" alt="demo of absolute positions">
+                    <figcaption> An example of Absolute positioning</figcaption>
+                </figure>
+                <p> Last week at the starter league, here are some things I learned...</p>
+            </article>
+            <article class="blog-entry">
+                <h2> What I did on my summer vacation </h2>
+                <time datetime="2015-09-09">Sept 9 '15</time>
+                <figure>
+                    <img src="images/world_map_salmon.png" alt="world map">
+                    <figcaption> Traveling the world </figcaption>
+                </figure>
+                <p> It was a fun summer, I started classes at The Starter League...</p>
+            </article>
+            <article class="blog-entry">
+                <h2> How to make a quiche </h2>
+                <time datetime="2015-09-02">Sept 2 '15</time>
+                <p> It's a lot of eggs, for starters.... </p>
+            </article>
+            <article class="blog-entry">
+                <h2> How to build a bed from scratch</h2>
+                <time datetime="2015-09-02">Aug 30 '15</time>
+                <figure>
+                    <img src="images/bed_angle.jpg" alt="bed">
+                    <figcaption> Our DIY bed </figcaption>
+                </figure>
+                <p> It'll take a lot of time, but will save you $$$...</p>
+            </article>
+            <article class="blog-entry">
+                <h2> The rules of tidying your house</h2>
+                <time datetime="2015-09-02">Aug 15 '15</time>
+                <p> Everything has a place, and everything needs to be in it's place. </p>
+            </article>
+        </section>
+        <section class="travel" id="travel">
+            <h1 id="posts"> Recent Blog Posts </h1>
+            <article class="blog-entry">
+                <h2><a href="blog_entry/AbsolutePositioning.html"> What I've learned about absolute positioning </a></h2>
+                <time datetime="2015-09-09">Sept 9 '15</time>
+                <figure>
+                    <img src="images/absolute_positions.png" alt="demo of absolute positions">
+                    <figcaption> An example of Absolute positioning</figcaption>
+                </figure>
+                <p> Last week at the starter league, here are some things I learned...</p>
+            </article>                
+        </section>
+        </div>
+
+        <aside>
+            
+            <div class="relativeimg"><img src="images/aboutme_author.png" alt="picture of author"><div class=" circle absoluteimg">
+            <h2>About me<h2></div></div>
+            <P>My name is Patricia de Boer. I currently work for Nielsen as an Operations Manager. Right now I'm taking classes learning web development at the Starter League. I love traveling the world, photography, baking, reading, and learning new things. Click here to learn more</p>
+            <h1> Popular Blog Posts</h1>
+            <p>Other blog posts you might enjoy: </p>
+            <ul>
+                <li class="listpicblog">
+                    <a href="posts/travels">My trip to Japan</a>
                 </li>
                 <li>
-                  <a href="/posts"> Posts </a>
+                    <a href="www.gq.com">GQ for style</a>
                 </li>
-                <li><a href="/travel">Travel</a></li>
-                <li><a href="/recipes">Recipes</a></li>
             </ul>
-        </nav>
-
-        <main>
-            <section class="blog-index">
-                <h1> Recent Blog Posts </h1>
-                <article class="blog-entry">
-                    <h2><a href="blog_entry/AbsolutePositioning.html"> What I've learned about absolute positioning </a></h2>
-                    <time datetime="2015-09-09">Sept 9 '15</time>
-                    <figure>
-                        <img src="images/absolute_positions.png" alt="demo of absolute positions">
-                        <figcaption> An example of Absolute positioning</figcaption>
-                    </figure>
-                    <p> Last week at the starter league, here are some things I learned...</p>
-                </article>
-                <article class="blog-entry">
-                    <h2> What I did on my summer vacation </h2>
-                    <time datetime="2015-09-09">Sept 9 '15</time>
-                    <figure>
-                        <img src="images/world_map_salmon.png" alt="world map">
-                        <figcaption> Traveling the world </figcaption>
-                    </figure>
-                    <p> It was a fun summer, I started classes at The Starter League...</p>
-                </article>
-                <article class="blog-entry">
-                    <h2> How to make a quiche </h2>
-                    <time datetime="2015-09-02">Sept 2 '15</time>
-                    <p> It's a lot of eggs, for starters.... </p>
-                </article>
-                <article class="blog-entry">
-                    <h2> How to build a bed from scratch</h2>
-                    <time datetime="2015-09-02">Aug 30 '15</time>
-                    <figure>
-                        <img src="images/bed_angle.jpg" alt="bed">
-                        <figcaption> Our DIY bed </figcaption>
-                    </figure>
-                    <p> It'll take a lot of time, but will save you $$$...</p>
-                </article>
-                <article class="blog-entry">
-                    <h2> The rules of tidying your house</h2>
-                    <time datetime="2015-09-02">Aug 15 '15</time>
-                    <p> Everything has a place, and everything needs to be in it's place. </p>
-                </article>
-            </section>
-            <aside>
-                
-                <div class="relativeimg"><img src="images/aboutme_author.png" alt="picture of author"><div class=" circle absoluteimg">
-                <h2>About me<h2></div></div>
-                <P>My name is Patricia de Boer. I currently work for Nielsen as an Operations Manager. Right now I'm taking classes learning web development at the Starter League. I love traveling the world, photography, baking, reading, and learning new things. Click here to learn more</p>
-                <h1> Popular Blog Posts</h1>
-                <p>Other blog posts you might enjoy: </p>
-                <ul>
-                    <li class="listpicblog">
-                        <a href="posts/travels">My trip to Japan</a>
-                    </li>
-                    <li>
-                        <a href="www.gq.com">GQ for style</a>
-                    </li>
-                </ul>
-            </aside>
-        </main>
+        </aside>
+    </main>
 
 
-        <footer>
-            <strong>This site is written and maintained by Patricia de Boer</strong>
-            <address>
-                Patricia de Boer<br>
-                Visit me at:<br>
-                Chicago, IL<br>
-                PO BOX 515 <br>
-                USA
-            </address>
-        </footer>
+    <footer>
+        <strong>This site is written and maintained by Patricia de Boer</strong>
+        <address>
+            Patricia de Boer<br>
+            Visit me at:<br>
+            Chicago, IL<br>
+            PO BOX 515 <br>
+            USA
+        </address>
+    </footer>
 
 
-         <script src="js/vendor/jquery-1.11.2.js"></script>
-         <script src="js/main.js"></script>
-    </body>
+     <script src="js/vendor/jquery-1.11.2.js"></script>
+     <script src="js/main.js"></script>
+</body>
 </html>
 
 

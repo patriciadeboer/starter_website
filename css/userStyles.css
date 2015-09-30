@@ -1,11 +1,15 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/**************** KEY BODY ELEMENTS ****************/
+
+
 h1{
 	font: 50px "amaticbold", sans-serif;
 	text-align:center;
+	margin:10px;
 }
-
 
 header h1{
 	background-color:#FF6B6B;
@@ -20,14 +24,13 @@ aside h1{
 	font-size:40px;
 }
 
-
 section h1{
 	border-bottom: 1px black solid;
 }
 
 body{
-/*	background-color:#E8E8E8;*/
-	margin: 10px ;
+	margin: 5px ;
+	margin-top:55px;
 }
 
 a{
@@ -49,19 +52,15 @@ p{
 	font: 20px "josefin_sansregular", sans-serif;
 	color:#292F36;
 }
-/*nav
-{
-	width: 100%;
-	background-color: #6EF9F5;
-}*/
 
-nav > img{
-	height: 70px;
-}
-
-
+/*************** NAVIGATION BAR ***************/
 nav{
    background-color:#00B0E0;
+   display:inline;
+   left:0px;
+   top:0px;
+   position:fixed;
+   width:100%;
 }
 
 nav ul{
@@ -69,7 +68,7 @@ nav ul{
 	text-align: center;
 	padding:0;
 	margin:0;
-  background-color:#00B0E0;
+  	background-color:#00B0E0;
 }
 
 nav li{
@@ -99,28 +98,50 @@ nav ul li.active a
   color: #FF7373;
 }
 
+
+/*************** ASIDE FORMATTING ***************/
 aside li a{
 	text-align: center;
 	font: 30px "amaticbold", sans-serif;
 }
 
-.logo
+.listpicblog
 {
-	display: inline-block;
-	height: 50px;
-/*	background-image: url("../images/author.JPG");
-	background-repeat: no-repeat;*/
+    background-image: url('../images/Japan.jpg');
+    background-repeat: no-repeat;
+    height: 250px;
+    max-width: 100%;
+/*    background-position: 50% 10px;*/
 }
 
-/*a:hover{
-	color:#FFE66D;
-	text-decoration: underline;
+/* About Me*/
+.circle{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	font-size:35px;
+	line-height: 100px;
+	text-align:center;
+	background: #000;
 }
-nav a:hover
-{
-	color: #F7FFF7;
-}*/
 
+.circle h2{
+	line-height: 30px;
+	color:#fffeb3;
+}
+.relativeimg{
+	position:relative;
+	top:10px;
+}
+
+
+.absoluteimg.circle{
+	position:absolute;
+	bottom:15px;
+	left:200px;
+}
+
+/*************** ARTICLE FORMATTING ***************/
 .blog-index article:nth-child(odd) h2{
 	background-color: #6EF9F5;
 }
@@ -147,69 +168,34 @@ figcaption {
 }
 
 
-.circle{
-	width:100px;
-	height:100px;
-	border-radius:50%;
-	font-size:35px;
-	line-height: 100px;
-	text-align:center;
-	background: #000;
-}
 
-.circle h2{
-	line-height: 30px;
-	color:#fffeb3;
-}
-.relativeimg{
-	position:relative;
-	top:10px;
-}
-
-
-.absoluteimg.circle{
-	position:absolute;
-	bottom:15px;
-	left:200px;
-}
 footer {
   clear: both;
 }
 
-.listpicblog
-{
-    background-image: url('../images/Japan.jpg');
-    background-repeat: no-repeat;
-    height: 250px;
-    max-width: 100%;
-/*    background-position: 50% 10px;*/
-}
-
+/*************** FORMATTING FOR PHONE SCREEN ***************/
 @media screen and (min-width: 680px) {
   nav li {
-    width: 130px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-
-  }
+	    width: 130px;
+	    border-bottom: none;
+	    height: 50px;
+	    line-height: 50px;
+	}
     nav li {
-    display: inline-block;
-    margin-right: -4px;
-  }
-section{
-	margin: 1.5px;
-	float:left;
-	width:67%;
-	background-color:#E8E8E8 ;
-}
-
-aside{
-	float:right;
-	margin: 0 1.5%;
-	width:26%;
-}
-
+	    display: inline-block;
+	    margin-right: -4px;
+  	}
+	aside{
+		float:right;
+		margin: 0 1.5%;
+		width:26%;
+	}
+	.leftside{
+		margin: 1.5px;
+		float:left;
+		width:67%;
+		background-color:#E8E8E8 ;
+	}
 }
 
 
