@@ -3,20 +3,29 @@
    ========================================================================== */
 
  var character_name= 'Roaring Panda';
+
+ var character_desc={
+ 	'class_level':'Newbie',
+ 	'background': 'queen',
+ 	'name':'Patricia',
+ 	'race':'panda',
+ 	'player_name':'dutchchica',
+ 	'exp_points':'none'
+ };
  // var character_name = prompt('What is character name');
 
 console.log('\nCharacter Name: ' + character_name+ '\n\n******************************\n')
 
- var class_level = "Newbie";
- var background = "Queen";
- var name = "Patricia";
- var race="Panda";
+ // var class_level = "Newbie";
+ // var background = "Queen";
+ // var name = "Patricia";
+ // var race="Panda";
 
 
 
 
 
-var intro='Real Name: ' + name + '.\nI am at class level, ' + class_level + ', and my background is ' + background + '.\nRace: '+ race;
+var intro='Real Name: ' + character_desc.name + '.\nI am at class level, ' + character_desc.class_level + ', and my background is ' + character_desc.background + '.\nRace: '+ character_desc.race + ' . \nMy player name is ' + character_desc.player_name + ' and I have ' + character_desc.exp_points + ' experience points.';
 
 console.log(intro+'\n\n******************************\n');
 
