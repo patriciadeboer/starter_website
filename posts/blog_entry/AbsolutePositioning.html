@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Absolute Positioning Blog Entry</title>
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/html5boilerplate.css">
+        <link rel="stylesheet" href="../css/userStyles.css">
+        <link href="../fonts/webfontkit-20150908-133113/stylesheet.css" rel="stylesheet" type="text/css">
+        <link href="../fonts/webfontkit-20150916-090002/stylesheet.css" rel="stylesheet" type="text/css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1>Life as we know it blog </h1>
+            <time>
+        </header>
+        <nav class="container">
+    <!--             <img class="pic_author" src="images/author.JPG" alt="a picture of the author" /> -->
+            <div class="logo"><img class="pic_author" src="../images/author.JPG" alt="a picture of the author" /> </div>
+            <ul class="navigation-links">
+                <li class="active first"><a href="index.html">Home</a></li>
+                <li>
+                    <a href="/aboutme"> About Me </a>
+                </li>
+                <li>
+                  <a href="/posts"> Posts </a>
+                </li>
+                <li><a href="/travel">Travel</a></li>
+                <li><a href="/recipes">Recipes</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="group">
+                <p> Relative box will always remain aligned to the left side of the page while absolute is 10px to the left of its parent relative box. Relative is happily sitting on the bottom border of its section as it has no veritical positioning. Absolute box will always begin under last line of text in relative box as it has no veritical positioning in this case. </p> 
+                <div class="box relative"> Relative 
+                    <div class="box absolute"> Absolute </div> 
+                </div>
+            </div>
+            <div class="group">
+                <p> See what happens when I add an extra line to relative box? Also notice how this text doesn't care that above absolute box overlaps :(. Its position is absolute and doesn't contribute to height of parent therefore the text doesn't really register it's there.</p> 
+                <div class="box relative"> Relative again <br> next line
+                    <div class="box absolute"> Absolute repeat</div> 
+                </div>
+            </div>
+            <div class="group g2">
+                <p> Notice this text is 200px to the left of its section thanks to that annoying overlapping absolute repeat box (and having to add a margin left to this paragraph to compensate). This relative box is 15px from the line of text above it, and lastly, its absolute buddy has 25px margin between the end of relative box's text and its text line. These boxes have a horizontal margin of auto therefore it will always be centered in your page. Change the screen width and see for yourself... IT MOVES!  </p> 
+                <div class="box relative r2"> Relative 2 
+                    <div class="box absolute a2"> Absolute 2</div>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="box relative r3"> Relative 3 
+                    <div class="box absolute a3"> Absolute 3 Borderbox</div>
+                </div>
+                <p> This relative box has a bottom positioning therefore it's position is based on it's distance from the top of this text. Also this absolute box is a borderbox and therefore it is smaller (It might be hard to see but I promise it is). The padding (5px) is included in the overall size and not in addition to the 175 px. Notice I'm not 185px like the other absolute boxes</p>
+            </div>
+        </main>
+
+
+        <footer>
+            <strong>This site is written and maintained by Patricia de Boer</strong>
+            <address>
+                Patricia de Boer<br>
+                Visit me at:<br>
+                Chicago, IL<br>
+                PO BOX 515 <br>
+                USA
+            </address>
+        </footer>
+
+<!--
+         <script src="js/vendor/jquery-1.11.2.js"></script>
+         <script src="js/main.js"></script> -->
+    </body>
+</html>
+
+

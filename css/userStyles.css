@@ -5,6 +5,10 @@
 /**************** KEY BODY ELEMENTS ****************/
 
 
+body{
+	margin: 55px 5px;
+}
+
 h1{
 	font: 50px "amaticbold", sans-serif;
 	text-align:center;
@@ -14,6 +18,7 @@ h1{
 header h1{
 	background-color:#FF6B6B;
 	height: 70px;
+	margin:0px;
 	margin-bottom:10px;
 	color:#F7FFF7;
 }
@@ -28,10 +33,7 @@ section h1{
 	border-bottom: 1px black solid;
 }
 
-body{
-	margin: 5px ;
-	margin-top:55px;
-}
+
 
 a{
 	Text-decoration:none;
@@ -59,8 +61,6 @@ nav{
    display:inline;
    left:0px;
    top:0px;
-   position:fixed;
-   width:100%;
 }
 
 nav ul{
@@ -75,7 +75,7 @@ nav li{
 	font: 1.05em "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 50px;
 	text-transform: uppercase;
-  border-bottom: 1px solid white;
+  	border-bottom: 1px solid white;
 }
 
 nav a
@@ -99,6 +99,7 @@ nav ul li.active a
 }
 
 
+
 /*************** ASIDE FORMATTING ***************/
 aside li a{
 	text-align: center;
@@ -107,7 +108,7 @@ aside li a{
 
 .listpicblog
 {
-    background-image: url('../images/Japan.jpg');
+    background-image: url('../images/travel/Japan.jpg');
     background-repeat: no-repeat;
     height: 250px;
     max-width: 100%;
@@ -142,6 +143,8 @@ aside li a{
 }
 
 /*************** ARTICLE FORMATTING ***************/
+
+/*Blog Posts*/
 .blog-index article:nth-child(odd) h2{
 	background-color: #6EF9F5;
 }
@@ -167,15 +170,52 @@ figcaption {
 		text-transform: uppercase;
 }
 
-
-
-footer {
-  clear: both;
+/* Travel*/
+.travel h2{
+	margin:0px;
 }
 
+.travel-icon{
+	display:inline-block;
+	height:250px;
+	margin:5px;
+	text-align: center;
+}
+/**************** FOOTER ****************/
+footer {
+  clear: both;
+  background-color: #FF6B6B;
+  position:fixed;
+  height:50px;
+  width:100%;
+  bottom:0px;
+  right:0px;
+  display:inline;
+}
+
+footer ul{
+	list-style: none;
+	text-align: center;
+	padding:0;
+	margin:0;
+}
+
+footer li{
+	display:inline;
+	line-height: 50px;
+	padding: 0 30px;
+}
+
+.title{
+	font:18px "josefin_sansregular",sans-serif;
+}
 /*************** FORMATTING FOR PHONE SCREEN ***************/
 @media screen and (min-width: 680px) {
-  nav li {
+  nav{
+	   position:fixed;
+	   width:100%;
+   }
+   nav li {
 	    width: 130px;
 	    border-bottom: none;
 	    height: 50px;
@@ -192,13 +232,29 @@ footer {
 	}
 	.leftside{
 		margin: 1.5px;
+		margin-bottom:55px;
 		float:left;
 		width:67%;
 		background-color:#E8E8E8 ;
 	}
+	/*Space for fixed header*/
+	.anchor{
+	  display: block;
+	  height: 50px; /*same height as header*/
+	  margin-top: -50px; /*same height as header*/
+	  visibility: hidden;
+	}
 }
 
+figure{
+	text-align: center;
+}
 
+.travel{
+	text-align: center;
+	margin: 10px 0px;
+}
+/**************** ABSOLUTE RELATIONS BLOG ENTRY *****************/
 .box{
 	height:175px;
 	width:175px;
