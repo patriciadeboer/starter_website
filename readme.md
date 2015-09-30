@@ -6,4 +6,4 @@ This is her first experience with GitHub!
 
 *********************************
 
-I will be storing my homework here in this file
+This is a sample blog used to do homework assignments.

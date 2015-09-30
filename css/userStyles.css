@@ -411,12 +411,10 @@ p.backstory{
 	}
 }
 
-.aboutme img{
-	width:130px;
-}
 
 .icon{
 	display:inline-block;
+	width:130px;
 }
 
 /*.skills{
