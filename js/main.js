@@ -59,10 +59,14 @@ function rollDiceWithChecking(sidedDice, numberOfDice) {
 	//if(sidedDice==validDice){
 	if(sidedDice==2||sidedDice==4||sidedDice==6||sidedDice==8||sidedDice==10||sidedDice==12||sidedDice==20){
 		for(i=1; i<=numberOfDice; i++){
-  		var rollmanysides2 = Math.floor(Math.random()*sidedDice) + 1; // function uses same Math.floor but does it x times, 
-  		console.log('\n dice ' + [i] + ' is ' + rollmanysides2)
+  		var rollmanysides3 = Math.floor(Math.random()*sidedDice) + 1; // function uses same Math.floor but does it x times, 
+  		console.log('\n dice ' + [i] + ' is ' + rollmanysides3);
+  		if(rollmanysides3==1 && sidedDice==20){
+  				console.log(' , critical fail');
+			}
 		}
-	} else{
+	// } else if(sidedDice==20){
+	else{
 		console.log("There are no " +[sidedDice]+'-sided dice, certainly not ' + [numberOfDice] +' of them!')
 	}
 }
@@ -77,7 +81,28 @@ rollDiceWithChecking(9, 5);
 //logs out: "There are no 9-sided dice, certainly not 5 of them!"
 
 
+function rollDiceCriticalStrike(sidedDice, numberOfDice) {
+  //code to check if sided dice is valid
+  // Math.floor(Math.random()*sidedDice) done numberOfDice times...
+  // log out each value, but if a d20 and is 20 or 1 log out extra info
+}
 
+// examples of using the function
+
+rollDiceCriticalStrike(20, 3);
+//logs out: 
+//dice 1 is 20, critical strike!
+//dice 2 is 15
+//dice 3 is 18
+
+rollDiceCriticalStrike(20, 1);
+//logs out: 
+//dice 1 is 1, critical fail!
+
+rollDiceCriticalStrike(20, 2);
+//logs out: 
+//dice 1 is 20, critical strike!
+//dice 2 is 20, critical strike!
 
 
  //Homework week 2-4
