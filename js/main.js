@@ -1,7 +1,88 @@
 /* ==========================================================================
    Author's custom scripts
    ========================================================================== */
+//Homework 5
+console.log('*********** Homework 5 *********** \n')
 
+console.log('\n1st die roll: \n' )
+
+function d20(){
+	var roll = Math.floor(Math.random()*20) + 1;
+	console.log(roll)
+}
+
+d20();
+
+
+//PART 2 number of rolls determined user
+console.log('\n\nDETERMINE NUMBER OF DICE: \n')
+function manyD20(numberOfDice) {
+	  	console.log('\n***********\nNumber of dice: '+ numberOfDice);
+	  	for(i=1; i<=numberOfDice; i++){
+  		var rollmany = Math.floor(Math.random()*20) + 1; // function uses same Math.floor but does it x times, 
+  		console.log('\n dice ' + [i] + ' is ' + rollmany)
+	}	
+}
+manyD20(5); 
+//logs out:
+// dice 1 is 15, dice 2 is 20, dice 3 is 8, dice 4 is 12, dice 5 is 12
+
+manyD20(2); 
+//logs out:
+// dice 1 is 4, dice 2 is 18 
+
+console.log('\n\nDETERMINE NUMBER OF DICE & SIDES: \n')
+
+function rollDice(sidedDice, numberOfDice) {
+	console.log('\n***********\nNumber of dice: '+ numberOfDice + '; Number of sides: '+ sidedDice);
+	for(i=1; i<=numberOfDice; i++){
+  		var rollmanysides = Math.floor(Math.random()*sidedDice) + 1; // function uses same Math.floor but does it x times, 
+  		console.log('\n dice ' + [i] + ' is ' + rollmanysides)
+  // Math.floor(Math.random()*sidedDice) done numberOfDice times...
+	}
+}
+
+// examples of using the function
+
+rollDice(6, 4);  //a classic 6-sided die
+//logs out: dice 1 is 6, dice 2 is 4, dice 3 is 1, dice 4 is 2
+
+rollDice(10, 2); //a 10-sided die
+//logs out: dice 1 is 8, dice 2 is 7
+
+console.log('\n\nVERIFY NUMBER OF SIDES: \n')
+
+var validDice = [2,4,6,8,10,12,20];
+
+function rollDiceWithChecking(sidedDice, numberOfDice) {
+	console.log('\n***********\nNumber of dice: '+ numberOfDice + '; Number of sides: '+ sidedDice);
+	//if(sidedDice==validDice){
+	if(sidedDice==2||sidedDice==4||sidedDice==6||sidedDice==8||sidedDice==10||sidedDice==12||sidedDice==20){
+		for(i=1; i<=numberOfDice; i++){
+  		var rollmanysides2 = Math.floor(Math.random()*sidedDice) + 1; // function uses same Math.floor but does it x times, 
+  		console.log('\n dice ' + [i] + ' is ' + rollmanysides2)
+		}
+	} else{
+		console.log("There are no " +[sidedDice]+'-sided dice, certainly not ' + [numberOfDice] +' of them!')
+	}
+}
+
+rollDiceWithChecking(6, 2);
+//logs out: dice 1 is 5, dice 2 is 4
+
+rollDiceWithChecking(7, 4);
+//logs out: "There are no 7-sided dice, certainly not 4 of them!"
+
+rollDiceWithChecking(9, 5);
+//logs out: "There are no 9-sided dice, certainly not 5 of them!"
+
+
+
+
+
+ //Homework week 2-4
+
+console.log('\n ******** Homework 4 *********** \n')
  var character_name= 'Roaring Panda';
 
  var character_desc={
