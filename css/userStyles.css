@@ -459,11 +459,13 @@ input[type="text"]{
 	font-size:30px;
 	display:block;
 	margin:5px;
+	width:400px;
 }
 
 input[type="number"]{
 	font-size:25px;
 	display:block;
+	width:400px;
 	margin:5px;
 }
 
