@@ -1,0 +1,79 @@
+
+
+@keyframes changecolors {
+  30% { background-color: #FA7921; }
+  60% { background-color: #FDE74C; }
+  90% { background-color: #9BC53D; }
+}
+
+.links{
+	 animation: changecolors 4s ease-in-out;
+}
+
+.moveit{
+	width:300px;
+}
+
+figure:hover {
+  position: relative;
+  bottom: 0;
+  animation : hoverAndShadow 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hoverAndShadow {
+  0% { bottom: 0px; }
+  75% { bottom: 10px; }
+  100% { bottom: 7px; }
+}
+
+footer {
+   position: fixed;
+   bottom: 0;
+   animation: jumpToMiddle 5s;
+}
+
+@keyframes jumpToMiddle {
+   0% { bottom: 0; }
+   50% { bottom: 50%; }
+   100% { bottom: 0; }
+}
+
+.logo {
+  animation: spin 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+/*Image curtain css*/
+.curtain{
+	width:400px;
+	overflow: hidden;
+	position: relative;
+}
+
+.curtain img{
+	max-width:100%;
+}
+
+.hider { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: black;
+  opacity: 1; 
+  animation: slide-leftright 10s linear;
+  animation-iteration-count: infinite;
+  /*animation-iteration-count: infinite;*/
+}
+
+@keyframes slide-leftright {
+  from { left: 0; }
+  to { left: 100%; }
+}
