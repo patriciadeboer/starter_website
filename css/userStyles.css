@@ -452,3 +452,30 @@ ul.check_list
 	background: transparent url("../images/Heart_Checkbox_25px.png") scroll 0 8px no-repeat;
 	list-style: none;
 }
+
+/*Credit Card info post*/
+
+input[type="text"]{
+	font-size:30px;
+	display:block;
+	margin:5px;
+}
+
+input[type="number"]{
+	font-size:25px;
+	display:block;
+	margin:5px;
+}
+
+
+input[type="submit"]{
+	width:100px;
+	height:40px;
+	border:0px;
+	font-size: 20px;
+	background-color: orange;
+}
+
+label:focus{
+	border-bottom: 1px black solid;
+}
