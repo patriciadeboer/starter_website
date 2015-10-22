@@ -1,0 +1,395 @@
+/* ==========================================================================
+ * Author's custom styles
+ * ==========================================================================
+
+/**************** KEY BODY ELEMENTS ***************
+
+body
+  margin: 5px 5px
+
+h1
+  font: 50px "amaticbold", sans-serif
+  text-align: center
+  margin: 10px
+
+header h1
+  background-color: #FF6B6B
+  height: 70px
+  margin: 0px
+  margin-bottom: 10px
+  color: #F7FFF7
+
+aside h1
+  color: white
+  background-color: black
+  font-size: 40px
+
+section h1
+  border-bottom: 1px black solid
+
+a
+  Text-decoration: none
+  color: #FF6B6B
+
+h2
+  font: 40px "amaticbold", sans-serif
+  color: #FF6B6B
+
+time
+  font: 14px "josefin_sansregular",sans-serif
+  font-style: italic
+
+p
+  font: 20px "josefin_sansregular", sans-serif
+  color: #292F36
+
+/*************** NAVIGATION BAR **************
+
+nav
+  background-color: #00B0E0
+  display: inline
+  left: 0px
+  top: 0px
+  ul
+    list-style: none
+    text-align: center
+    padding: 0
+    margin: 0
+    background-color: #00B0E0
+  li
+    font: 1.05em "Helvetica Neue", Helvetica, Arial, sans-serif
+    line-height: 50px
+    text-transform: uppercase
+    border-bottom: 1px solid white
+  a
+    display: block
+    text-decoration: none
+    color: white
+    transition: .3s background-color
+  ul li
+    a:hover
+      background-color: #fffeb3
+      color: #FF7373
+    &.active a
+      background-color: white
+      color: #FF7373
+
+/*************** ASIDE FORMATTING **************
+
+aside li a
+  text-align: center
+  font: 30px "amaticbold", sans-serif
+
+.listpicblog
+  background-image: url('../images/travel/Japan.jpg')
+  background-repeat: no-repeat
+  height: 250px
+  max-width: 100%
+  /*    background-position: 50% 10px;
+
+/* About Me
+
+.circle
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  font-size: 35px
+  line-height: 100px
+  text-align: center
+  background: #000
+  h2
+    line-height: 30px
+    color: #fffeb3
+
+.relativeimg
+  position: relative
+  top: 10px
+  text-align: center
+  max-width: 100%
+
+.absoluteimg.circle
+  position: absolute
+  bottom: 15px
+  left: 200px
+  visibility: hidden
+
+/*************** ARTICLE FORMATTING **************
+
+/*Blog Posts
+
+.blog-index article
+  &:nth-child(odd) h2
+    background-color: #6EF9F5
+  &:nth-child(even) h2
+    background-color: #FFe66d
+
+article
+  p:after
+    content: " Read more"
+    font-size: 12px
+  img
+    max-height: 250px
+    max-width: 100%
+
+figcaption
+  font: 14px "josefin_sansregular",sans-serif
+  font-style: italic
+  text-transform: uppercase
+
+/* Travel
+
+.travel h2
+  margin: 0px
+  margin-bottom: 10px
+
+.travel-icon
+  display: inline-block
+  height: 250px
+  margin: 5px
+  text-align: center
+
+.travel
+  text-align: center
+
+.recipe-icon
+  width: 250px
+  display: inline-block
+  height: 250px
+  margin: 5px
+  text-align: center
+
+.recipes
+  text-align: center
+  h2
+    margin: 0px
+    margin-bottom: 10px
+
+/**************** FOOTER ***************
+
+footer
+  clear: both
+  background-color: #FF6B6B
+  position: fixed
+  height: 50px
+  width: 99%
+  bottom: 0px
+  right: 0px
+  display: inline
+  box-sizing: border-box
+  ul
+    list-style: none
+    text-align: center
+    padding: 0
+    margin: 0
+  li
+    display: inline
+    line-height: 50px
+    padding: 0 30px
+    box-sizing: border-box
+
+.title
+  font: 18px "josefin_sansregular",sans-serif
+
+/*************** FORMATTING FOR PHONE SCREEN **************
+@media screen and (min-width: 680px)
+  nav
+    position: fixed
+    width: 99%
+    box-sizing: border-box
+    li
+      width: 130px
+      border-bottom: none
+      height: 50px
+      line-height: 50px
+      display: inline-block
+      margin-right: -4px
+  aside
+    float: right
+    margin: 0 1.5%
+    width: 26%
+  .leftside
+    margin: 1.5px
+    margin-bottom: 55px
+    float: left
+    width: 67%
+    background-color: #E8E8E8
+  /*Space for fixed header
+  .anchor
+    display: block
+    height: 50px
+    /*same height as header
+    margin-top: -50px
+    /*same height as header
+    visibility: hidden
+  body
+    margin: 55px 5px
+  .mobile_title
+    visibility: hidden
+    position: absolute
+  .relativeimg
+    text-align: left
+  .absoluteimg.circle
+    visibility: visible
+
+figure
+  text-align: center
+
+/**************** ABSOLUTE RELATIONS BLOG ENTRY ****************
+
+.box
+  height: 175px
+  width: 175px
+
+.relative
+  position: relative
+  background-color: #FFE66D
+
+.absolute
+  position: absolute
+  left: 10px
+  background-color: #A5FFD6
+  padding: 5px
+
+.r2
+  margin: auto
+  left: 15px
+  top: 15px
+
+.a2
+  margin: 25px
+
+.r3
+  left: 550px
+  bottom: 50px
+
+.a3
+  margin: 5px 20px
+  box-sizing: content-box
+  /*default just delete
+  box-sizing: border-box
+  /*any padding and border included in width
+  border: 1px blue solid
+
+.group
+  border-top: 2px white solid
+  border-bottom: 2px orange solid
+  width: 100%
+  p
+    max-width: 1200px
+
+.g2 p
+  margin-left: 200px
+
+.absoluteposition
+  margin: 5px
+
+/******************** ABOUT ME *************************
+
+.aboutme
+  body
+    background-color: #FDFDFD
+  h1
+    font: 115px/1.0em "amaticbold", sans-serif
+    color: #FF7373
+    text-align: center
+  div
+    text-align: center
+  h2
+    font: 25px "segoe ui", sans-serif
+    letter-spacing: .15em
+    font-weight: bold
+  width: 99%
+  color: #444
+  background-color: transparent
+  background-position: center
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  /* Safari and Chrome
+  -moz-background-size: cover
+  /* Firefox
+  -o-background-size: cover
+  /* Internet Explorer
+  section
+    &:nth-child(odd)
+      background: url(../images/GreyWood.jpg)
+      border-bottom: #dddddd solid 1px
+      padding: .5em 0em
+      box-sizing: border-box
+    &:nth-child(even)
+      background-color: #AFEEEE
+      border-bottom: #dddddd solid 1px
+      padding: .01em 0em 1em
+      box-sizing: border-box
+
+/* BACKSTORY ------
+
+img.backstory
+  width: 98%
+  background-position: center
+
+p.backstory
+  width: 98%
+
+@media screen and (min-width: 680px)
+  img.backstory
+    width: 70%
+    display: inline-block
+    vertical-align: top
+    background-position: center
+    -webkit-background-size: contain
+    /* Safari and Chrome
+    -moz-background-size: contain
+    /* Firefox
+    -ms-background-size: contain
+    /* Internet Explorer
+    -o-background-size: contain
+    /* Opera
+  p.backstory
+    width: 20%
+    display: inline-block
+    vertical-align: top
+
+.icon
+  display: inline-block
+
+/*.skills{
+ *	text-align: center;
+ *}
+
+/* ----CHECKLIST----
+
+ul.check_list
+  margin-left: 30px
+
+.check_list
+  font: 18px/1.94em "Helvetica Neue", Helvetica, Arial, sans-serif
+  letter-spacing: -0.02em
+  li
+    padding-left: 30px
+    background: transparent url("../images/Heart_Checkbox_25px.png") scroll 0 8px no-repeat
+    list-style: none
+
+/*Credit Card info post
+
+input
+  &[type="text"]
+    font-size: 30px
+    display: block
+    margin: 5px
+    width: 400px
+    border: solid 1px #dcdcdc
+    transition: box-shadow 0.3s, border 0.3s
+  &[type="number"]
+    font-size: 25px
+    display: block
+    width: 400px
+    margin: 5px
+  &[type="submit"]
+    width: 100px
+    height: 40px
+    border: 0px
+    font-size: 20px
+    background-color: orange
+  &[type="text"]:focus
+    border: solid 1px orange
+    box-shadow: 0 0 5px 1px orange

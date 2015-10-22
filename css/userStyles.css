@@ -378,9 +378,8 @@ figure{
 	background-position: center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover; /* Safari and Chrome */
-	-moz-background-sigit sze: cover; /* Firefox */
+	-moz-background-size: cover; /* Firefox */
 	-o-background-size: cover; /* Internet Explorer */
-	background-size: cover; /* CSS3 */
 }
 
 
@@ -411,13 +410,12 @@ p.backstory{
 	{
 		width: 70%;
 		display:inline-block;
-		vertical-align: top
+		vertical-align: top;
 		background-position: center; 
 		-webkit-background-size: contain; /* Safari and Chrome */
 		-moz-background-size: contain; /* Firefox */
 		-ms-background-size: contain; /* Internet Explorer */
-		-o-background-size: contain; /* Opera */
-		background-size: contain; /* CSS3 */ 
+		-o-background-size: contain; /* Opera */ 
 	}
 
 	p.backstory{
