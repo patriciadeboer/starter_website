@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Calculator</title>
+        <meta name="description" content="A website showcasing the work of a studnet in the Starter League Fall 2015 class!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/html5boilerplate.css">
+        <link rel="stylesheet" href="../../css/calculatorStyles.css">
+
+        <script src="../../js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav>
+            <h1> A Few Calculators </h1>
+        </nav>
+        
+        <main class="calculators">
+            <div class="calculator">
+                <h2>Word Statistics</h2>
+                <div class="calculator_form">
+                    <input id="phraseInput" type="text" placeholder="A word or phrase."/>
+                    <input type="submit" onclick="get_word_statistics()" />
+                </div>
+                <p class="stat">
+
+                    Target String: <span id="js_target_string"> </span>
+                </p>
+                <p class="stat">
+                    Character count: <span id="js_character_count"> </span>
+                </p>
+                <p class="stat">
+                    Character count w/o spaces: 
+                    <span id="js_character_count_no_spaces"> </span>
+                </p>
+                <p class="stat">
+                    Word count:
+                    <span id="js_word_count"> </span>
+                </p>
+                <p class="stat">
+                    Tweetable?
+                    <!-- Yes if less than 140 Chars, no if greater, how many characters too many it is if no, e.g 'No, exceeded by 6 characters' -->
+                    <span id="js_word_count"></span>
+                </p>
+
+            </div>
+            <div class="calculator">
+                <h2>DnD Stats</h2>
+                <input type="submit" onclick="generate_character()" value="Generate Character!"/>
+                <p class="stat">
+                    Name:
+                    <span id="js_dnd_name"> </span>
+                </p>
+                <p class="stat">
+                    Alignment:
+                    <span id="js_dnd_alignment"> </span>
+                </p>
+                <p class="stat">
+                    Strength:
+                    <span id="js_dnd_str"> </span>
+                </p>
+                <p class="stat">
+                    Dexterity:
+                    <span id="js_dnd_dex"> </span>
+                </p>
+                <p class="stat">
+                    Wisdom:
+                    <span id="js_dnd_wis"> </span>
+                </p>
+                <p class="stat">
+                    Charisma:
+                    <span id="js_dnd_chr"> </span>
+                </p>
+                <p class="stat">
+                    Constitution:
+                    <span id="js_dnd_con"> </span>
+                </p>
+                <p class="stat">
+                    Intelligence:
+                    <span id="js_dnd_int"> </span>
+                </p>
+                <input type="submit" onclick="saveCharacter()" value="Save Character" />
+            </div>
+            <div class="calculator">
+                <h2>Click Likes to Like</h2>
+                <p>
+                    <em>We are such stuff as dreams are made on, and our little life, is rounded with a sleep.</em>
+                    <span id="js_shake_1" onclick="clickToLike('js_shake_1');">0 Likes</span>
+                </p>
+                <p>
+                    <em>No legacy is so rich as honesty.</em>
+                    <span id="js_shake_2">0 Likes</span>
+                </p>
+                <p>
+                    <em>Wisely, and slow. They stumble that run fast.</em>
+                    <span id="js_shake_3">0 Likes</span>
+                </p>
+
+            </div>
+
+            <div class="saved_characters">
+                <h2>Saved Characters</h2>
+                
+            </div>
+        </main>
+
+
+        <script src="../../js/vendor/jquery-1.11.2.js"></script>
+        <script src="../../js/calculator.js"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+h1, h2 {
+	text-align: center;
+}
+.calculator {
+	border-radius: 5px;
+	border : 2px solid #eee;
+	min-height: 300px;
+	flex-basis: 300px;
+	margin: 15px;
+	padding: 10px;
+}
+
+.calculators {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.calculator_form input[type='text'] {
+	width: 189px;
+	border: 2px solid #eee;
+}
+.calculator_form input[type='submit'] {
+	width: 100px;
+	color: #999;
+	padding: 1px;
+	border: 2px solid #eee;
+	border-radius: 2px;
+	background-color: white;
+}
