@@ -34,7 +34,7 @@ h2 {
   color: #FF6B6B; }
 
 time {
-  font: 14px "josefin_sansregular",sans-serif;
+  font: 14px "josefin_sansregular", sans-serif;
   font-style: italic; }
 
 p {
@@ -122,7 +122,7 @@ article img {
   max-width: 100%; }
 
 figcaption {
-  font: 14px "josefin_sansregular",sans-serif;
+  font: 14px "josefin_sansregular", sans-serif;
   font-style: italic;
   text-transform: uppercase; }
 
@@ -176,7 +176,7 @@ footer {
     box-sizing: border-box; }
 
 .title {
-  font: 18px "josefin_sansregular",sans-serif; }
+  font: 18px "josefin_sansregular", sans-serif; }
 
 /*************** FORMATTING FOR PHONE SCREEN ************** */
 @media screen and (min-width: 680px) {

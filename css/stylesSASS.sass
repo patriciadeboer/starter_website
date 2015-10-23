@@ -4,16 +4,29 @@
 
 /**************** KEY BODY ELEMENTS ****************/
 
+//DEFINE VARIABLES
+
+$font-stack: "amaticbold", sans-serif
+$secondary-font: "josefin_sansregular", sans-serif
+
+//Color scheme
+
+$primary-color: #FF6B6B // currently salmon-orange
+$secondary-color: #00B0E0 // currently blue
+$accent-color: #FFE66D // currently pastel yellow
+$behind-color: #E8E8E8 // currently grey
+
+
 body
   margin: 5px 5px
 
 h1
-  font: 50px "amaticbold", sans-serif
+  font: 50px $font-stack
   text-align: center
   margin: 10px
 
 header h1
-  background-color: #FF6B6B
+  background-color: $primary-color
   height: 70px
   margin: 0px
   margin-bottom: 10px
@@ -29,24 +42,24 @@ section h1
 
 a
   Text-decoration: none
-  color: #FF6B6B
+  color: $primary-color
 
 h2
-  font: 40px "amaticbold", sans-serif
-  color: #FF6B6B
+  font: 40px $font-stack
+  color: $primary-color
 
 time
-  font: 14px "josefin_sansregular",sans-serif
+  font: 14px $secondary-font
   font-style: italic
 
 p
-  font: 20px "josefin_sansregular", sans-serif
+  font: 20px $secondary-font
   color: #292F36
 
 /*    NAVIGATION BAR   */
 
 nav
-  background-color: #00B0E0
+  background-color: $secondary-color
   display: inline
   left: 0px
   top: 0px
@@ -55,7 +68,7 @@ nav
     text-align: center
     padding: 0
     margin: 0
-    background-color: #00B0E0
+    background-color: $secondary-color
   li
     font: 1.05em "Helvetica Neue", Helvetica, Arial, sans-serif
     line-height: 50px
@@ -78,7 +91,7 @@ nav
 
 aside li a
   text-align: center
-  font: 30px "amaticbold", sans-serif
+  font: 30px $font-stack
 
 .listpicblog
   background-image: url('../images/travel/Japan.jpg')
@@ -121,7 +134,7 @@ aside li a
   &:nth-child(odd) h2
     background-color: #6EF9F5
   &:nth-child(even) h2
-    background-color: #FFe66d
+    background-color: $accent-color
 
 article
   p:after
@@ -132,7 +145,7 @@ article
     max-width: 100%
 
 figcaption
-  font: 14px "josefin_sansregular",sans-serif
+  font: 14px $secondary-font
   font-style: italic
   text-transform: uppercase
 
@@ -168,7 +181,7 @@ figcaption
 
 footer
   clear: both
-  background-color: #FF6B6B
+  background-color: $primary-color
   position: fixed
   height: 50px
   width: 99%
@@ -188,7 +201,7 @@ footer
     box-sizing: border-box
 
 .title
-  font: 18px "josefin_sansregular",sans-serif
+  font: 18px $secondary-font
 
 /*************** FORMATTING FOR PHONE SCREEN **************
 @media screen and (min-width: 680px)
@@ -212,7 +225,7 @@ footer
     margin-bottom: 55px
     float: left
     width: 67%
-    background-color: #E8E8E8
+    background-color: $behind-color
   /*Space for fixed header
   .anchor
     display: block
@@ -242,7 +255,7 @@ figure
 
 .relative
   position: relative
-  background-color: #FFE66D
+  background-color: $accent-color
 
 .absolute
   position: absolute
@@ -289,7 +302,7 @@ figure
   body
     background-color: #FDFDFD
   h1
-    font: 115px/1.0em "amaticbold", sans-serif
+    font: 115px/1.0em $font-stack
     color: #FF7373
     text-align: center
   div
