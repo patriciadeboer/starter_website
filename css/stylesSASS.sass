@@ -149,7 +149,7 @@ figcaption
   font-style: italic
   text-transform: uppercase
 
-/* Travel
+/* Travel */
 
 .travel h2
   margin: 0px
@@ -177,7 +177,7 @@ figcaption
     margin: 0px
     margin-bottom: 10px
 
-/**************** FOOTER ***************
+// FOOTER
 
 footer
   clear: both
@@ -203,7 +203,70 @@ footer
 .title
   font: 18px $secondary-font
 
-/*************** FORMATTING FOR PHONE SCREEN **************
+//ANIMATION FOR ANIMATION ARTICLE
+.containerbox
+  width: 100px
+  height: 100px
+  border-radius: 25px
+  background: #00B0E0
+  padding: 5px
+  box-sizing: border-box
+  .containeritem
+    width: 40px
+    height: 40px
+    background: #f44336
+    border-radius: 20px
+    box-sizing: border-box
+  animation: animeOne 6s ease-in infinite
+
+.containeritem
+  animation: animeTwo 4s ease-in-out infinite
+
+
+@keyframes animeTwo
+  0%
+    width: 40px
+    margin-left: 0px
+    margin-top: 0px
+
+  25%
+    margin-left: 50px
+    margin-top: 0px
+
+  50%
+    margin-left: 50px
+    margin-top: 50px
+    background: #FFE66D
+
+  75%
+    margin-left: 0px
+    margin-top: 50px
+
+  100%
+    width: 40px
+    margin-left: 0px
+    margin-top: 0px
+    background: #f44336
+
+
+@keyframes animeOne
+  0%
+    transform: rotateZ(0deg)
+
+  25%
+    transform: rotateZ(90deg)
+
+  50%
+    transform: rotateZ(180deg)
+
+  75%
+    transform: rotateZ(270deg)
+
+  100%
+    transform: rotateZ(360deg)
+
+//   FORMATTING FOR PHONE SCREEN
+
 @media screen and (min-width: 680px)
   nav
     position: fixed
@@ -226,13 +289,13 @@ footer
     float: left
     width: 67%
     background-color: $behind-color
-  /*Space for fixed header
+  //Space for fixed header
   .anchor
     display: block
     height: 50px
-    /*same height as header
+    //same height as header
     margin-top: -50px
-    /*same height as header
+    //same height as header
     visibility: hidden
   body
     margin: 55px 5px
@@ -247,7 +310,7 @@ footer
 figure
   text-align: center
 
-/**************** ABSOLUTE RELATIONS BLOG ENTRY ****************
+// ABSOLUTE RELATIONS BLOG ENTRY 
 
 .box
   height: 175px
@@ -278,9 +341,9 @@ figure
 .a3
   margin: 5px 20px
   box-sizing: content-box
-  /*default just delete
+  //default just delete
   box-sizing: border-box
-  /*any padding and border included in width
+  //any padding and border included in width
   border: 1px blue solid
 
 .group
@@ -296,7 +359,7 @@ figure
 .absoluteposition
   margin: 5px
 
-/******************** ABOUT ME *************************
+//_______________ ABOUT ME _______________
 
 .aboutme
   body
@@ -317,11 +380,11 @@ figure
   background-position: center
   background-repeat: no-repeat
   -webkit-background-size: cover
-  /* Safari and Chrome
+  //Safari and Chrome
   -moz-background-size: cover
-  /* Firefox
+  // Firefox
   -o-background-size: cover
-  /* Internet Explorer
+  // Internet Explorer
   section
     &:nth-child(odd)
       background: url(../images/GreyWood.jpg)
@@ -334,7 +397,7 @@ figure
       padding: .01em 0em 1em
       box-sizing: border-box
 
-/* BACKSTORY ------
+// BACKSTORY ------
 
 img.backstory
   width: 98%
@@ -350,13 +413,13 @@ p.backstory
     vertical-align: top
     background-position: center
     -webkit-background-size: contain
-    /* Safari and Chrome
+    // Safari and Chrome
     -moz-background-size: contain
-    /* Firefox
+    // Firefox
     -ms-background-size: contain
-    /* Internet Explorer
+    // Internet Explorer
     -o-background-size: contain
-    /* Opera
+    // Opera
   p.backstory
     width: 20%
     display: inline-block
@@ -367,9 +430,9 @@ p.backstory
 
 /*.skills{
  *	text-align: center;
- *}
+ }*/
 
-/* ----CHECKLIST----
+// ----CHECKLIST----
 
 ul.check_list
   margin-left: 30px
@@ -382,7 +445,7 @@ ul.check_list
     background: transparent url("../images/Heart_Checkbox_25px.png") scroll 0 8px no-repeat
     list-style: none
 
-/*Credit Card info post
+// CREDIT CARD INFO FORMATTING
 
 input
   &[type="text"]

@@ -34,7 +34,7 @@ h2 {
   color: #FF6B6B; }
 
 time {
-  font: 14px "josefin_sansregular",sans-serif;
+  font: 14px "josefin_sansregular", sans-serif;
   font-style: italic; }
 
 p {
@@ -122,7 +122,7 @@ article img {
   max-width: 100%; }
 
 figcaption {
-  font: 14px "josefin_sansregular",sans-serif;
+  font: 14px "josefin_sansregular", sans-serif;
   font-style: italic;
   text-transform: uppercase; }
 
@@ -153,7 +153,6 @@ figcaption {
     margin: 0px;
     margin-bottom: 10px; }
 
-/**************** FOOTER *************** */
 footer {
   clear: both;
   background-color: #FF6B6B;
@@ -176,9 +175,59 @@ footer {
     box-sizing: border-box; }
 
 .title {
-  font: 18px "josefin_sansregular",sans-serif; }
+  font: 18px "josefin_sansregular", sans-serif; }
 
-/*************** FORMATTING FOR PHONE SCREEN ************** */
+.containerbox {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+  background: #00B0E0;
+  padding: 5px;
+  box-sizing: border-box;
+  animation: animeOne 6s ease-in infinite; }
+  .containerbox .containeritem {
+    width: 40px;
+    height: 40px;
+    background: #f44336;
+    border-radius: 20px;
+    box-sizing: border-box; }
+
+.containeritem {
+  animation: animeTwo 4s ease-in-out infinite; }
+
+@keyframes animeTwo {
+  0% {
+    width: 40px;
+    margin-left: 0px;
+    margin-top: 0px; }
+  25% {
+    margin-left: 50px;
+    margin-top: 0px; }
+  50% {
+    margin-left: 50px;
+    margin-top: 50px;
+    background: #FFE66D; }
+  75% {
+    margin-left: 0px;
+    margin-top: 50px; }
+  100% {
+    width: 40px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background: #f44336; } }
+
+@keyframes animeOne {
+  0% {
+    transform: rotateZ(0deg); }
+  25% {
+    transform: rotateZ(90deg); }
+  50% {
+    transform: rotateZ(180deg); }
+  75% {
+    transform: rotateZ(270deg); }
+  100% {
+    transform: rotateZ(360deg); } }
+
 @media screen and (min-width: 680px) {
   nav {
     position: fixed;
@@ -201,13 +250,10 @@ footer {
     float: left;
     width: 67%;
     background-color: #E8E8E8; }
-  /*Space for fixed header */
   .anchor {
     display: block;
     height: 50px;
-    /*same height as header */
     margin-top: -50px;
-    /*same height as header */
     visibility: hidden; }
   body {
     margin: 55px 5px; }
@@ -222,7 +268,6 @@ footer {
 figure {
   text-align: center; }
 
-/**************** ABSOLUTE RELATIONS BLOG ENTRY **************** */
 .box {
   height: 175px;
   width: 175px; }
@@ -252,9 +297,7 @@ figure {
 .a3 {
   margin: 5px 20px;
   box-sizing: content-box;
-  /*default just delete */
   box-sizing: border-box;
-  /*any padding and border included in width */
   border: 1px blue solid; }
 
 .group {
@@ -270,7 +313,6 @@ figure {
 .absoluteposition {
   margin: 5px; }
 
-/******************** ABOUT ME ************************* */
 .aboutme {
   width: 99%;
   color: #444;
@@ -278,11 +320,8 @@ figure {
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  /* Safari and Chrome */
   -moz-background-size: cover;
-  /* Firefox */
-  -o-background-size: cover;
-  /* Internet Explorer */ }
+  -o-background-size: cover; }
   .aboutme body {
     background-color: #FDFDFD; }
   .aboutme h1 {
@@ -306,7 +345,6 @@ figure {
     padding: 0.01em 0em 1em;
     box-sizing: border-box; }
 
-/* BACKSTORY ------ */
 img.backstory {
   width: 98%;
   background-position: center; }
@@ -321,13 +359,9 @@ p.backstory {
     vertical-align: top;
     background-position: center;
     -webkit-background-size: contain;
-    /* Safari and Chrome */
     -moz-background-size: contain;
-    /* Firefox */
     -ms-background-size: contain;
-    /* Internet Explorer */
-    -o-background-size: contain;
-    /* Opera */ }
+    -o-background-size: contain; }
   p.backstory {
     width: 20%;
     display: inline-block;
@@ -338,8 +372,7 @@ p.backstory {
 
 /*.skills{
  *	text-align: center;
- *} */
-/* ----CHECKLIST---- */
+ }*/
 ul.check_list {
   margin-left: 30px; }
 
@@ -351,7 +384,6 @@ ul.check_list {
     background: transparent url("../images/Heart_Checkbox_25px.png") scroll 0 8px no-repeat;
     list-style: none; }
 
-/*Credit Card info post */
 input[type="text"] {
   font-size: 30px;
   display: block;
