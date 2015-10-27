@@ -71,12 +71,61 @@ function generate_character() {
 // 		// replace this with your function that doesn't allow a dice roll to be a 1
 
 // 		return Math.floor(Math.random()*6) + Math.floor(Math.random()*6) + Math.floor(Math.random()*6);
+	// function rollDice() {
+	// 	var numberOfDice = 4;
+	// 	var sidedDice= 6;
+
+	// 	var allRolls= [0];
+	// 	for(i=1; i<=numberOfDice; i++){
+ //  			var rollOne = Math.floor(Math.random()*sidedDice) + 1; // function uses same Math.floor but does it x times, 
+ //  			//console.log('\n dice ' + [i] + ' is ' + rollmanysides)
+ //  			var rollTwo = Math.floor(Math.random()*sidedDice) + 1;
+ //  			var rollThree = Math.floor(Math.random()*sidedDice) + 1;
+ //  			var rollFour = Math.floor(Math.random()*sidedDice) + 1;
+	// 		console.log('\n one ' + [i] + ' two ' + rollTwo + ' three ' + rollThree)
+	// 	}	
+	// }
+
+	function rollDice() {
+		var numberOfDice = 4;
+		var sidedDice= 6;
+
+		var allRolls= [0];
+		var sumAllRolls = 0;
+		for(i=1; i<=numberOfDice; i++){
+  			allRolls[i-1] = Math.floor(Math.random()*sidedDice) + 1;
+  			if(allRolls[i-1]===1) {
+  				i--;
+  			}
+			//sumAllRolls +=allRolls[i-1]
+		}
+		for(i=1; i<=numberOfDice; i++){
+			sumAllRolls +=allRolls[i-1]
+		}	
+
+		console.log(allRolls + " - array of Rolls")
+		console.log(sumAllRolls + " (sum of all) ")
+		minimumRoll=Math.min.apply(null, allRolls);
+		console.log("-" + minimumRoll)
+
+		sumMinusMin= sumAllRolls - minimumRoll;
+
+		console.log(sumMinusMin + " = sum of all rolls minus mimumum")
+
+		return sumMinusMin
+
+
+	}
 // 	}
 
 	document.getElementById('js_random_dndname').innerHTML = randomName();
 	document.getElementById('js_random_alignment').innerHTML = randomAlignment();
-// 	document.getElementById('js_dnd_str').innerHTML = rollStat();
-// 	document.getElementById('js_dnd_dex').innerHTML = rollStat();
+ 	document.getElementById('js_dnd_strength').innerHTML = rollDice();
+	document.getElementById('js_dnd_dexterity').innerHTML = rollDice();
+	document.getElementById("js_dnd_wisdom").innerHTML = rollDice();
+	document.getElementById("js_dnd_charisma").innerHTML = rollDice();
+	document.getElementById("js_dnd_constitution").innerHTML = rollDice();
+	document.getElementById("js_dnd_intelligence").innerHTML = rollDice();
 
  }
 
