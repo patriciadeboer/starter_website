@@ -37,40 +37,48 @@ function get_word_statistics() {
 
 function generate_character() {
 
-	var first_names = ['Ragnar', 'Roneesh', 'Ellice', 'Starfire', 'Renita', 'Fargone', 'Zistop', 'Rigby'],
-		last_names = ['Roxin', 'Piverr', 'Tristway', 'Mistborne', 'Walkfire', 'Lostlake', 'Cornithian', 'Wasberry'];
+	var first_names = ['Roaring', 'Eating', 'Sleeping', 'Angry', 'Lazy', 'Silly', 'Manic', 'Hyper'],
+		last_names = ['Panda', 'Lion', 'Bear', 'Dog', 'Dragon', 'Snake', 'Alien', 'Giraffe','Monkey', 'Elephant'];
 
 	function randomName() {
 		// get a random element from each array, then return them as a string, replace mistborn with a random element from the last_names array;
 
-		// The return statement is a short way of writing something like this...
-		// var random_index = Math.floor(Math.random()*last_names.length);
-		// var random_last_name = last_names[random_index];
-		// return random_first_name + ' '  + random_last_name;
+		randomFirst=first_names[Math.floor(Math.random()*first_names.length)];
+		randomLast=last_names[Math.floor(Math.random()*last_names.length)];
 
-		return first_names[Math.floor(Math.random()*first_names.length)] + ' ' + 'Mistborne';
+		return randomFirst + ' ' + randomLast;
 	}
 
-	function randomAlignment() {
-		var adjective = ['lawful', 'neutral', 'chaotic'];
-		var alignment = ['good', 'neutral', 'evil'];
 
-		// make this output work, e.g. return lawful evil, or chaotic good;
-		// if the alignment is 'neutral neutral' instead return 'true neutral'
-	}
+ 	function randomAlignment() {
+ 		var adjective = ['lawful', 'neutral', 'chaotic'];
+ 		var alignment = ['good', 'neutral', 'evil'];
 
-	function rollStat() {
-		// add up three rolls of a six-sided die
-		// replace this with your function that doesn't allow a dice roll to be a 1
+ 		randomAdj=Math.floor(Math.random()*adjective.length);
+		randomAlign=Math.floor(Math.random()*alignment.length);
 
-		return Math.floor(Math.random()*6) + Math.floor(Math.random()*6) + Math.floor(Math.random()*6);
-	}
 
-	document.getElementById('js_dnd_name').innerHTML = randomName();
-	document.getElementById('js_dnd_str').innerHTML = rollStat();
-	document.getElementById('js_dnd_dex').innerHTML = rollStat();
+		if (randomAdj=== 1 && randomAlign===1){
+			return 'true neutral'
+		} else{
+			return adjective[randomAdj] + ' ' + alignment[randomAlign]
+		}
 
-}
+ 	}
+
+// 	function rollStat() {
+// 		// add up three rolls of a six-sided die
+// 		// replace this with your function that doesn't allow a dice roll to be a 1
+
+// 		return Math.floor(Math.random()*6) + Math.floor(Math.random()*6) + Math.floor(Math.random()*6);
+// 	}
+
+	document.getElementById('js_random_dndname').innerHTML = randomName();
+	document.getElementById('js_random_alignment').innerHTML = randomAlignment();
+// 	document.getElementById('js_dnd_str').innerHTML = rollStat();
+// 	document.getElementById('js_dnd_dex').innerHTML = rollStat();
+
+ }
 
 
 // function numberLikes(idName) {
