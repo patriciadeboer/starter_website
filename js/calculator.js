@@ -72,14 +72,42 @@ function generate_character() {
 
 }
 
+
+// function numberLikes(idName) {
+// 	var likes = document.getElementById(idName).innerHTML;
+
+// 	likes++;
+// 	// console.log(likes);
+// 	if (idName===countLikes1){
+// 		document.getElementById('countLikes1').innerHTML = likes;
+// 	} else if (idName===countLikes2){
+// 		document.getElementById('countLikes2').innerHTML = likes;
+// 	} else{
+// 		document.getElementById('countLikes3').innerHTML = likes;
+// 	}
+// }
+
 function numberLikes(idName) {
 	var likes = document.getElementById(idName).innerHTML;
 
-	console.log(likes);
 	likes++;
-	console.log(likes)
 
 	document.getElementById('countLikes1').innerHTML = likes++;
+}
+
+function numberLikes2(idName) {
+	var likes2 = document.getElementById(idName).innerHTML;
+
+	likes2++;
+
+	document.getElementById('countLikes2').innerHTML = likes2;
+}
+
+function numberLikes3(idName) {
+	var likes3 = document.getElementById(idName).innerHTML;
+
+	likes3++;
+	document.getElementById('countLikes3').innerHTML = likes3++;
 }
 
 /*extra from class for calc 2*/
