@@ -73,15 +73,13 @@ function generate_character() {
 }
 
 function numberLikes(idName) {
-	var nodes = document.getElementById(idName),
-		likes = nodes.innerHTML;
+	var likes = document.getElementById(idName).innerHTML;
 
 	console.log(likes);
-
-	nodes.innterHTML=likes++;
+	likes++;
 	console.log(likes)
 
-	document.getElementById('countLikes1').innerHTML = likes;
+	document.getElementById('countLikes1').innerHTML = likes++;
 }
 
 /*extra from class for calc 2*/
