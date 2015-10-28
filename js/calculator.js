@@ -144,6 +144,23 @@ function generate_character() {
    +"\n")
 
 	characters_div.appendChild(character_text);
+
+	// function saveCharacter() {
+// 		var characters_div = document.getElementById('saveCharDiv');
+
+// 	var character_text = document.createTextNode( "\n Character - "
+//    + "Name: " + character.name
+//    + " Alignment: " + character.alignment
+//    + " Strength: " + character.strength
+//    + " Dexterity: " + character.dexterity
+//    + " Wisdom: " + character.wisdom
+//    + " Charisma: " + character.charisma
+//    + " Constitution: " + character.constitution
+//    + " Intelligence: " + character.intelligence
+//    +"\n")
+
+// 	characters_div.appendChild(character_text);
+// }
 }
 
 
@@ -249,3 +266,5 @@ var alignment_span = document.getElementById('js_random_alignment')
 var alignment = alignment_span.innerHTML
 
 console.log(alignment)
+//console.log(character)
+
