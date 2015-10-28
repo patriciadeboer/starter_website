@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../../css/normalize.css">
         <link rel="stylesheet" href="../../css/html5boilerplate.css">
         <link rel="stylesheet" href="../../css/calculatorStyles.css">
+        <link rel="stylesheet" href="../../css/userStyles.css">
 
         <script src="../../js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -18,8 +19,15 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav>
-            <h1> A Few Calculators </h1>
+        <nav class= "container">
+            <ul class="navigation-links">
+                <li><a class="links" href="../../index.html">Home</a></li>
+                <li><a class="links" href="../aboutme.html"> About Me </a></li>
+                <li class="active first">
+                    <a class="links" href="../../index.html#posts"> Posts </a></li>
+                <li><a class="links" href="../../index.html#travel">Travel</a></li>
+                <li><a class="links" href="../../index.html#recipes">Recipes</a></li>
+            </ul>
         </nav>
         
         <main class="calculators">
@@ -37,7 +45,9 @@
             </div>
             <div class="calculator">
                 <h2>Dungeon &amp Dragon Stats </h2>
-                <input type="submit" value="Generate Player!" onclick="generate_character()" />
+                <div class="calculator_form">
+                    <input type="submit" value="Generate Player!" onclick="generate_character()" />
+                </div>
                 <p class="stat"> Name: <span id="js_random_dndname"> </span> </p>
                 <p class="stat"> Alignment: <span id="js_random_alignment"></span> </p>
                 <p class="stat"> Strength: <span id="js_dnd_strength"></span></p>
@@ -47,7 +57,9 @@
                 <p class="stat"> Constitution: <span id="js_dnd_constitution"></span></p>
                 <p class="stat"> Intelligence: <span id="js_dnd_intelligence"></span></p>
                 <!-- <input type="submit" value="Save Character" /> --> 
-                <input type="submit" value="Save Character" onclick="saveCharacter()" /> 
+                <div class="calculator_form">
+                    <input type="submit" value="Save Character" onclick="saveCharacter()" /> 
+                </div>
             </div>
             <div class="calculator">
                 <h2>Click on 'Likes' to like Quote </h2>

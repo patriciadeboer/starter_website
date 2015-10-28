@@ -21,13 +21,15 @@ h1, h2 {
 .calculator_form input[type='text'] {
 	width: 189px;
 	border: 2px solid #eee;
+	font-size: 20px;
 }
 .calculator_form input[type='submit'] {
-	width: 100px;
-	color: #999;
+	width: 175px;
+	color: #FF6B6B ;
 	padding: 1px;
 	border: 2px solid #eee;
 	border-radius: 2px;
-	background-color: white;
+	background-color: #FFE66D;
+
 }
 

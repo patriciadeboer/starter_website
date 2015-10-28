@@ -14,7 +14,7 @@ function generate_character() {
 
 
  	function randomAlignment() {
- 		var adjective = ['lawful', 'neutral', 'chaotic'];
+ 		var adjective = ['Lawful', 'Neutral', 'Chaotic'];
  		var alignment = ['good', 'neutral', 'evil'];
 
  		randomAdj=Math.floor(Math.random()*adjective.length);
@@ -212,7 +212,7 @@ function saveCharacter() {
    + " Charisma: " + character.charisma
    + " Constitution: " + character.constitution
    + " Intelligence: " + character.intelligence
-   +"\n")
+   +"\r")
 
 	characters_div.appendChild(character_text);
 }
