@@ -1,38 +1,38 @@
-function get_word_statistics() {
+// function get_word_statistics() {
 	
-	// 1. Getting input phrase
-	var phrase_input = document.getElementById('phraseInput');
-	console.log(phrase_input);
+// 	// 1. Getting input phrase
+// 	var phrase_input = document.getElementById('phraseInput');
+// 	console.log(phrase_input);
 
-	var phrase = phrase_input.value;
-	console.log(phrase);
+// 	var phrase = phrase_input.value;
+// 	console.log(phrase);
 
-	// 2. Getting desired statistics
-	var character_count = phrase.length;
-	console.log(character_count);
+// 	// 2. Getting desired statistics
+// 	var character_count = phrase.length;
+// 	console.log(character_count);
 
-	var no_spaces_count = phrase.replace(/\s+/g, '').length;
-	console.log(no_spaces_count);
+// 	var no_spaces_count = phrase.replace(/\s+/g, '').length;
+// 	console.log(no_spaces_count);
 
-	var word_count = phrase.split(' ').length;
-	console.log(word_count);
+// 	var word_count = phrase.split(' ').length;
+// 	console.log(word_count);
 
-	// 3. Putting Stats into the DOM
-	var target_string_span = document.getElementById('js_target_string');
-	target_string_span.innerHTML = phrase;
+// 	// 3. Putting Stats into the DOM
+// 	var target_string_span = document.getElementById('js_target_string');
+// 	target_string_span.innerHTML = phrase;
 
-	var character_count_span = document.getElementById('js_character_count');
-	character_count_span.innerHTML = character_count;
+// 	var character_count_span = document.getElementById('js_character_count');
+// 	character_count_span.innerHTML = character_count;
 
-	var no_spaces_span = document.getElementById('js_character_count_no_spaces');
-	no_spaces_span.innerHTML = no_spaces_count;
+// 	var no_spaces_span = document.getElementById('js_character_count_no_spaces');
+// 	no_spaces_span.innerHTML = no_spaces_count;
 
-	var word_count_span = document.getElementById('js_word_count');
-	word_count_span.innerHTML = word_count;
+// 	var word_count_span = document.getElementById('js_word_count');
+// 	word_count_span.innerHTML = word_count;
 
-	// 4. Reset text field
-	phrase_input.value = "";
-}
+// 	// 4. Reset text field
+// 	phrase_input.value = "";
+// }
 
 
 function generate_character() {
@@ -66,25 +66,7 @@ function generate_character() {
 
  	}
 
-// 	function rollStat() {
-// 		// add up three rolls of a six-sided die
-// 		// replace this with your function that doesn't allow a dice roll to be a 1
 
-// 		return Math.floor(Math.random()*6) + Math.floor(Math.random()*6) + Math.floor(Math.random()*6);
-	// function rollDice() {
-	// 	var numberOfDice = 4;
-	// 	var sidedDice= 6;
-
-	// 	var allRolls= [0];
-	// 	for(i=1; i<=numberOfDice; i++){
- //  			var rollOne = Math.floor(Math.random()*sidedDice) + 1; // function uses same Math.floor but does it x times, 
- //  			//console.log('\n dice ' + [i] + ' is ' + rollmanysides)
- //  			var rollTwo = Math.floor(Math.random()*sidedDice) + 1;
- //  			var rollThree = Math.floor(Math.random()*sidedDice) + 1;
- //  			var rollFour = Math.floor(Math.random()*sidedDice) + 1;
-	// 		console.log('\n one ' + [i] + ' two ' + rollTwo + ' three ' + rollThree)
-	// 	}	
-	// }
 
 	function rollDice() {
 		var numberOfDice = 4;
@@ -116,7 +98,7 @@ function generate_character() {
 
 
 	}
-// 	}
+
 
 	document.getElementById('js_random_dndname').innerHTML = randomName();
 	document.getElementById('js_random_alignment').innerHTML = randomAlignment();
@@ -125,47 +107,57 @@ function generate_character() {
 	document.getElementById("js_dnd_wisdom").innerHTML = rollDice();
 	document.getElementById("js_dnd_charisma").innerHTML = rollDice();
 	document.getElementById("js_dnd_constitution").innerHTML = rollDice();
-	document.getElementById("js_dnd_intelligence").innerHTML = rollDice();
+	document.getElementById("js_dnd_intelligence").innerHTML = rollDice();	
 
- }
+	var dndname = document.getElementById('js_random_dndname').innerHTML;
+	var alignment = document.getElementById('js_random_alignment').innerHTML;
+	var strength = document.getElementById('js_dnd_strength').innerHTML;
+	var dexterity = document.getElementById('js_dnd_dexterity').innerHTML;
+	var wisdom = document.getElementById('js_dnd_wisdom').innerHTML;
+	var charisma = document.getElementById('js_dnd_charisma').innerHTML;
+	var constitution = document.getElementById('js_dnd_constitution').innerHTML;
+	var intelligence = document.getElementById('js_dnd_intelligence').innerHTML;
+
+	var character = {
+		'name' : dndname,
+		'alignment' : alignment,
+		'strength' : strength,
+		'dexterity' : dexterity,
+	    'wisdom' : wisdom,
+	    'charisma' : charisma,
+		'constitution' : constitution,
+	   'intelligence' : intelligence
+	}
+	console.log(character)
+
+	var characters_div = document.getElementById('saveCharDiv');
+
+	var character_text = document.createTextNode( "\n Character - "
+   + "Name: " + character.name
+   + " Alignment: " + character.alignment
+   + " Strength: " + character.strength
+   + " Dexterity: " + character.dexterity
+   + " Wisdom: " + character.wisdom
+   + " Charisma: " + character.charisma
+   + " Constitution: " + character.constitution
+   + " Intelligence: " + character.intelligence
+   +"\n")
+
+	characters_div.appendChild(character_text);
+}
 
 
-// function numberLikes(idName) {
-// 	var likes = document.getElementById(idName).innerHTML;
 
-// 	likes++;
-// 	// console.log(likes);
-// 	if (idName===countLikes1){
-// 		document.getElementById('countLikes1').innerHTML = likes;
-// 	} else if (idName===countLikes2){
-// 		document.getElementById('countLikes2').innerHTML = likes;
-// 	} else{
-// 		document.getElementById('countLikes3').innerHTML = likes;
-// 	}
-// }
 
 function numberLikes(idName) {
-	var likes = document.getElementById(idName).innerHTML;
+	var likes = parseInt(document.getElementById(idName).innerHTML,10);
 
-	likes++;
+	likes= likes + 1;
 
-	document.getElementById('countLikes1').innerHTML = likes++;
+	document.getElementById(idName).innerHTML = likes;
 }
 
-function numberLikes2(idName) {
-	var likes2 = document.getElementById(idName).innerHTML;
 
-	likes2++;
-
-	document.getElementById('countLikes2').innerHTML = likes2;
-}
-
-function numberLikes3(idName) {
-	var likes3 = document.getElementById(idName).innerHTML;
-
-	likes3++;
-	document.getElementById('countLikes3').innerHTML = likes3++;
-}
 
 /*extra from class for calc 2*/
 
@@ -252,3 +244,8 @@ function countingWords(){
    tweetable_span.innerHTML = tweetable;
 
 }
+
+var alignment_span = document.getElementById('js_random_alignment')
+var alignment = alignment_span.innerHTML
+
+console.log(alignment)
