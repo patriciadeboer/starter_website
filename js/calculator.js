@@ -205,14 +205,15 @@ function saveCharacter() {
 
 	var character_text = document.createTextNode( "\n Character - "
    + "Name: " + character.name
-   + " Alignment: " + character.alignment
-   + " Strength: " + character.strength
-   + " Dexterity: " + character.dexterity
-   + " Wisdom: " + character.wisdom
-   + " Charisma: " + character.charisma
-   + " Constitution: " + character.constitution
-   + " Intelligence: " + character.intelligence
-   +"\r")
+   + "   Alignment: " + character.alignment
+   + "   Strength: " + character.strength
+   + "   Dexterity: " + character.dexterity
+   + "   Wisdom: " + character.wisdom
+   + "   Charisma: " + character.charisma
+   + "   Constitution: " + character.constitution
+   + "   Intelligence: " + character.intelligence
+   +"\n")
 
 	characters_div.appendChild(character_text);
+	characters_div.appendChild(document.createElement("br"));
 }
