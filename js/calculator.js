@@ -177,7 +177,7 @@ var alignment_span = document.getElementById('js_random_alignment')
 var alignment = alignment_span.innerHTML
 
 
-
+var characters = [];
 
 function saveCharacter() {
 	var dndname = document.getElementById('js_random_dndname').innerHTML;
@@ -199,21 +199,47 @@ function saveCharacter() {
 		'constitution' : constitution,
 	   'intelligence' : intelligence
 	}
-	//saveCharacter();
 
+	
+	characters.push(character);
+
+	//calls to display character
+	displayCharacters();
+
+	//MOVED THIS TO A SEPARATE FUNCTION
+	// var characters_div = document.getElementById('saveCharDiv');
+
+	// var character_text = document.createTextNode( "\n Character - "
+ //   + "Name: " + character.name
+ //   + "   Alignment: " + character.alignment
+ //   + "   Strength: " + character.strength
+ //   + "   Dexterity: " + character.dexterity
+ //   + "   Wisdom: " + character.wisdom
+ //   + "   Charisma: " + character.charisma
+ //   + "   Constitution: " + character.constitution
+ //   + "   Intelligence: " + character.intelligence
+ //   +"\n")
+
+	// characters_div.appendChild(character_text);
+	// characters_div.appendChild(document.createElement("br"));
+}
+
+function displayCharacters() {
 	var characters_div = document.getElementById('saveCharDiv');
 
-	var character_text = document.createTextNode( "\n Character - "
-   + "Name: " + character.name
-   + "   Alignment: " + character.alignment
-   + "   Strength: " + character.strength
-   + "   Dexterity: " + character.dexterity
-   + "   Wisdom: " + character.wisdom
-   + "   Charisma: " + character.charisma
-   + "   Constitution: " + character.constitution
-   + "   Intelligence: " + character.intelligence
-   +"\n")
+	characters_div.innerHTML = "";
+	for (var i=0; i , characters.length; i++){
+			var character_text = document.createTextNode( "\n Character - "
+		   + "Name: " + characters[i].name
+		   + "   Alignment: " + characters[i].alignment
+		   + "   Strength: " + characters[i].strength
+		   + "   Dexterity: " + characters[i].dexterity
+		   + "   Wisdom: " + characters[i].wisdom
+		   + "   Charisma: " + characters[i].charisma
+		   + "   Constitution: " + characters[i].constitution
+		   + "   Intelligence: " + characters[i].intelligence)
 
-	characters_div.appendChild(character_text);
-	characters_div.appendChild(document.createElement("br"));
+		 characters_div.appendChild(character_text);
+		 characters_div.appendChild(document.createElement("br"));
+	}
 }

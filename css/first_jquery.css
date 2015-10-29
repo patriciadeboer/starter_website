@@ -1,0 +1,77 @@
+.lessons {
+	width: 480px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.box {
+	margin: 0 auto;
+	width: 240px;
+	height: 120px;
+	border-radius: 2px;
+	background-color: #e6c700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: courier;
+	font-size: 12px;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+.cube {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+	background-color: #F234F0;
+}
+
+/* altering elements with css functions */
+.background-color-red {
+	background-color: red;
+}
+
+.has-animation {
+	animation: move-right 2s;
+	position: relative;
+	left: 0;
+}
+@keyframes move-right {
+	from {
+		left: 0;
+	}
+	to {
+		left: 200px;
+	}
+}
+
+/* DOM Manipulation jQuery functions*/
+.new-border {
+	border: 2px solid black;
+}
+.comic-sans {
+	font-family: 'Comic Sans MS';
+}
+.wubba {
+	clear: both;
+}
+
+/* forms lesson */
+.jquery-form {
+	width: 240px;
+	padding: 15px;
+	border-radius: 2px;
+	background-color: #eee;
+	margin: 0 auto;
+}
+.jquery-form input {
+	display: block;
+	margin: 10px auto;
+	border-radius: 4px;
+	background: none;
+	border: 2px solid #333;
+}
+.jquery-form input[type="radio"], .jquery-form input[type="checkbox"] {
+	display: inline;
+}

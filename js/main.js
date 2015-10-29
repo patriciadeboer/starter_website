@@ -63,10 +63,7 @@ function rollDiceWithChecking(sidedDice, numberOfDice) {
   		console.log('\n dice ' + [i] + ' is ' + rollmanysides3);
   		if(rollmanysides3==1 && sidedDice==20){
   				console.log(' , critical fail');
-			}
-		}
-	// } else if(sidedDice==20){
-	else{
+			} else{
 		console.log("There are no " +[sidedDice]+'-sided dice, certainly not ' + [numberOfDice] +' of them!')
 	}
 }
