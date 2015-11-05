@@ -197,4 +197,4 @@ $('#score').on('increment',function(){
 });
 
 //change source attribute on html of dice
-$('.die1').attr('src',)
+//$('.dice1').attr('src',)
