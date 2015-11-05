@@ -63,3 +63,49 @@ $('.jquery-form').on('submit', function(event) {
   event.preventDefault(); // default of submit is new page, here we are preventing that so we can validate the form
   validateForm();
 });
+
+//Change text in events.html and changing first box text
+$('.firstEvent').on('click',function(){
+	$(this).text('Clicked!');
+});
+
+//Toggle between blank and having Clicked! appear in second box
+$('.secondEvent').on('click',function(){
+	var textInsideDiv = $(this).text();
+
+	if (textInsideDiv ===''){
+		$(this).text('Clicked!');
+	} else{
+		$(this).text('');
+	}
+
+});
+
+
+$('.thirdEvent').on('mouseenter',function(){
+	$(this).text('Hover!');
+});
+
+$('.thirdEvent').on('mouseleave',function(){
+	$(this).text('');
+});
+
+//different way of writing same thing as above. Cleaner version
+$('.fourthEvent').on('mouseenter',function(){
+	$(this).text('Hover!');
+});
+
+//this method allows you to name your function to be more descriptive
+$('.fourthEvent').on('mouseleave',emptyText);
+
+function emptyText(){
+	$(this).text('');
+}
+
+
+$('.fifthEvent').on('click', {newText: "working!"}, changeTextOnFifthBox);
+
+function changeTextOnFifthBox(the_click_event) {
+  $(this).text(the_click_event.data.newText);
+}
+
