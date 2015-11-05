@@ -102,10 +102,99 @@ function emptyText(){
 	$(this).text('');
 }
 
+//feeding an arguement to the function
+$('.fifthEvent').on('click', {newText: "Patricia!"}, changeTextOnFifthBox);
 
-$('.fifthEvent').on('click', {newText: "working!"}, changeTextOnFifthBox);
-
-function changeTextOnFifthBox(the_click_event) {
-  $(this).text(the_click_event.data.newText);
+function changeTextOnFifthBox(event) {
+ //jQuery Object
+ console.log($(this));
+//DOM node
+ console.log(this);
+ //will tell you className of selector
+ console.log(this.className);
+ // console.log(event)
+ // $(this).text(event.data.newText);
 }
 
+//to ensure that it's working the right js file
+//alert('hello!')
+
+//list changing
+$('.example-list').on('click', '.example-list-item', changeColorWillWork )
+
+function changeColorWillWork() {
+  $(this).css('color', 'blue');
+}
+
+//Mondairn example
+
+$('.mondrian-color').on('click',getColor);
+
+//define var outside function for color
+var activeColor;
+
+function getColor(){
+	if($(this).hasClass('red')){
+		activeColor = 'red';
+	}
+	if($(this).hasClass('white')){
+		activeColor = 'white';
+	}
+	if($(this).hasClass('yellow')){
+		activeColor = 'yellow';
+	}
+	if($(this).hasClass('blue')){
+		activeColor = 'blue';
+	}
+	console.log(activeColor)
+}
+
+$('.canvasBox').on('click', fillMondrian);
+
+function fillMondrian(){
+	$(this).css('background-color', activeColor);
+
+}
+
+//trigger boxes
+
+$('.targetBox').on('woozy-wuzzle',function(){
+	var txt = $(this).text();
+	console.log(txt)
+	if(txt === 'woozy'|| txt ==='Ex 1'){
+		$(this).text('wuzzle');
+	} else if (txt ==='wuzzle'){
+		$(this).text('woozy');
+	}
+
+})
+
+$('.boxExample1.callingBox').on('click',function(){
+	console.log('clicked');
+	$('.targetBox').trigger('woozy-wuzzle')
+})
+
+//BALL EXAMPLE
+//set up an event on ball
+var score=0;
+
+//set up event
+$('.ball').on('click', incrementScore);
+
+//write event function
+function incrementScore(){
+	$('#score').trigger('increment');
+}
+
+$('#score').on('increment',function(){
+	console.log('hi from increment!')
+	score++;
+	if(score > 20) {
+		$(this).text('you win!')
+	} else{
+	$(this).text(score);
+	}
+});
+
+//change source attribute on html of dice
+$('.die1').attr('src',)

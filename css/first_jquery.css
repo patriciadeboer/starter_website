@@ -75,3 +75,46 @@
 .jquery-form input[type="radio"], .jquery-form input[type="checkbox"] {
 	display: inline;
 }
+
+.mondrian-color {
+	width:80px;
+	height:80px;
+	float:left;
+	border:1px solid black;
+	margin: 15px;
+}
+
+.red{background-color:red;}
+.blue{background-color:blue;}
+.yellow{background-color:yellow;}
+.black{background-color:black;}
+.canvasBox{
+	width:435px;
+	height:300px;
+	border:1px solid black;
+	clear: left;
+	margin-top: 15px;
+}
+
+
+/*BALL CSS ELEMENTS*/
+.ball {
+    height: 120px;
+    width: 120px;
+    background-color: #329999;
+    cursor: pointer;
+    border-radius: 50%;
+    left: 0px;
+    position:relative;
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce{
+	from{
+		left:0px;
+	}
+	to{
+		left:300px;
+	}
+}
+
