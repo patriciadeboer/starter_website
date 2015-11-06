@@ -38,8 +38,9 @@ $(document).ready(function () {
 		$('.color1').css("background-color", color1[randColor1]);
 		$('.color2').css("background-color", color2[randColor2]);
 		$('.color3').css("background-color", color3[randColor3]);
-		$('.boxes').css("background-color", "white")
-		$('.masterpiece').css("visibility", "hidden")
+		$('.boxes').css("background-color", "white");
+		$('.masterpiece').css("visibility", "hidden");
+		selectedColor='white';
 	};
 
 	//selecting and applying the color
