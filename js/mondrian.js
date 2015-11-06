@@ -26,6 +26,7 @@ $(document).ready(function () {
 		$('.color3').css("background-color", originalColors[2]);
 		$('.boxes').css("background-color", "white")
 		$('.masterpiece').css("visibility", "hidden")
+		selectedColor='white';
 	}
 
 	//original colors reset
@@ -57,7 +58,12 @@ $(document).ready(function () {
 	function changeColor() {
 
 		$(this).css("background-color", selectedColor );
-		$('.masterpiece').css("visibility", "visible")
+		if(selectedColor==="white"){
+			$('.masterpiece').css("visibility", "hidden")
+		}
+		else{
+			$('.masterpiece').css("visibility", "visible")
+		}
 	};
 
 
