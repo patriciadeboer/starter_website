@@ -198,3 +198,7 @@ $('#score').on('increment',function(){
 
 //change source attribute on html of dice
 //$('.dice1').attr('src',)
+
+
+
+
