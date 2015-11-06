@@ -3,7 +3,9 @@ button:hover{
 
 }
 
-
+.originalColors, .changePalette {
+	margin-bottom: 15px
+}
 
 .activeColor{
 	width:50px;
@@ -15,13 +17,13 @@ button:hover{
 	cursor: pointer;
 }
 
-.yellow{
+.color1{
 	background-color: yellow;
 }
-.blue{
+.color3{
 	background-color: blue;
 }
-.orange{
+.color2{
 	background-color: orange;
 }
 .white{
